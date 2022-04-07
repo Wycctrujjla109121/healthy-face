@@ -1,7 +1,7 @@
 import './App.css';
 
 //  COMPONENTS
-import Main from './components/page/main/main.jsx'
+import Main from './components/pages/main/main.jsx'
 //  STYLE
 
 function App() {
