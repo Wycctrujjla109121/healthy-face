@@ -1,0 +1,94 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 1394px;
+    width: 100%;
+
+    height: 665px;
+
+    margin: 0 auto;
+
+    background-image: url(../preview/mainScreenPhoto.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 75px;
+    &__text{
+        margin: 0px;
+
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 96px;
+        color: #fff;
+    }
+}
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    &__text{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+
+        margin: 0px;
+        margin-bottom: 63px;
+
+        width: 100%;
+        max-width: 328px;
+    }
+    &__wrapper__button{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: left;
+
+        background-color: transparent;
+
+        border: none;
+
+
+        color: #fff;
+
+        padding: 0px;
+
+        margin-right: 21px;
+    }
+    &__wrapper__img{
+        display: flex;
+        align-self: center;
+    }
+    &__slogan{
+        display: flex;
+        align-self: flex-end;
+
+        margin: 0px;
+
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 96px;
+        color: #fff;
+    }
+    &__span{
+        white-space:pre;
+        font-style: italic;
+    }
+}

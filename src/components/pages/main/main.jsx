@@ -1,7 +1,8 @@
 import React from 'react';
 
 //  COMPONENTS
-import Header from './Header/header.jsx'
+import Menu from './menu/menu.jsx'
+import Preview from './preview/preview.jsx'
 
 //  STYLES
 
@@ -9,7 +10,8 @@ import Header from './Header/header.jsx'
 const main = () => {
     return (
         <div>
-            <Header />
+            <Menu />
+            <Preview />
         </div>
     );
 };

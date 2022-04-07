@@ -6,7 +6,7 @@ import Link from './link/link.jsx'
 import Phone from './phone/phone.jsx'
 
 //  STYLE
-import style from './list.module.scss'
+import style from './menu.module.scss'
 
 const list = () => {
     return (
