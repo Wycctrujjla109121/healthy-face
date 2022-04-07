@@ -1,0 +1,12 @@
+.logo{
+    display: flex;
+    flex-direction: row;
+
+    &__star{
+        margin-right: 4px;
+    }
+    &__text{
+        margin: 0px;
+        font-size: 24px;
+    }
+}
