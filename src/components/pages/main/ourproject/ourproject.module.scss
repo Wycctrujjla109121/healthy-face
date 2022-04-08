@@ -1,0 +1,181 @@
+.ourproject {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    margin-top: 170px;
+
+    width: 100%;
+    max-width: 1420px;
+
+    &__title {
+        margin: 0px;
+        margin-bottom: 31px;
+        margin-left: 67px;
+
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        color: #fff;
+    }
+
+    &__show__more {
+        display: flex;
+        justify-content: right;
+
+        margin-bottom: 100px;
+        margin-top: 31px;
+
+        &__btn {
+            display: flex;
+
+            max-width: 145px;
+            width: 100%;
+
+            margin-right: 40px;
+
+            background-color: transparent;
+            border: none;
+
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #C4C4C4;
+            text-decoration: underline #C4C4C4;
+        }
+    }
+}
+
+.ourproject__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    &__btn {
+        background-color: transparent;
+
+        border: none;
+    }
+
+    &__btn__img {
+        // Потому будет дополнено
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+
+        margin: 0px 16px;
+    }
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    min-height: 329px;
+    height: 100%;
+
+    background-image: url(./productimg/ourProducts__img__0.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin: 20px 20px 18px 20px;
+        height: 100%;
+
+        &__price__name {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: column;
+
+            &__new {
+                display: flex;
+                margin: 0px;
+
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+
+                color: #fff;
+            }
+
+            &__old {
+                margin: 0px;
+
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+
+                color: #FFFFFF80;
+
+                text-decoration: line-through;
+            }
+        }
+
+
+
+        &__name {
+
+            &__text {
+                margin: 0px;
+
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+
+                color: #fff;
+            }
+        }
+
+        &__btn {
+            position: relative;
+
+            background-color: transparent;
+
+            border: none;
+
+            text-align: left;
+
+            max-width: 67px;
+            width: 100%;
+
+            padding: 0px;
+            margin: 0px;
+
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            font-size: 18px;
+
+            color: #000;
+
+            &::after {
+                display: inline-block;
+                position: absolute;
+                left: 0px;
+                bottom: -2px;
+
+                width: 65px;
+                height: 5px;
+
+                content: '';
+
+                background-image: url(./product/Arrow1.svg);
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

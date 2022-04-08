@@ -1,0 +1,14 @@
+.showspray{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    max-width: 209px;
+    width: 100%;
+    height: 209px;
+
+    &__btn{
+        border: none;
+        background-color: transparent;
+    }
+}
