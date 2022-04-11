@@ -1,0 +1,28 @@
+.offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1420px;
+
+    margin: 0 auto;
+    margin-top: 180px;
+
+    &__text{
+        margin: 0px;
+
+        width: 100%;
+        max-width: 869px;
+
+        font-family: 'Playfair Display', serif;
+        font-size: 64px;
+        font-weight: 400;
+
+        color: #fff;
+    }
+    &__img{
+        // Возможно будет дополнено
+    }
+}

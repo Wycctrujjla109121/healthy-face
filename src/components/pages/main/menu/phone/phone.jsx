@@ -1,7 +1,7 @@
 import React from 'react';
 
 // STYLES 
-import style from '.././menu.module.scss'
+import style from './phone.module.scss'
 
 const phone = () => {
     return (

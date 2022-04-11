@@ -1,0 +1,14 @@
+.title{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 75px;
+    &__text{
+        margin: 0px;
+
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 96px;
+        color: #fff;
+    }
+}

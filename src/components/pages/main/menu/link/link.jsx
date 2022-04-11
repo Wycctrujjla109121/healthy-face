@@ -1,7 +1,7 @@
 import React from 'react';
 
 //  STYLE
-import style from '../menu.module.scss'
+import style from './link.module.scss'
 
 const link = () => {
     return (

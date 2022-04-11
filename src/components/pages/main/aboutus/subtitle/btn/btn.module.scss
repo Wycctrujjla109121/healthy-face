@@ -1,0 +1,32 @@
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 42px;
+
+    &__left{
+        width: 120px;
+        height: 30px;
+
+        background-image: url(./btnBg/arrows__pic__left.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: transparent;
+        background-position: center;
+
+        border: none;
+    }
+    &__right{
+        width: 120px;
+        height: 30px;
+
+        background-image: url(./btnBg/arrows__pic__right.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: transparent;
+        background-position: center;
+
+        border: none;
+    }
+}

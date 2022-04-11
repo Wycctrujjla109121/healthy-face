@@ -1,19 +1,19 @@
 import React from 'react';
 
 //  COMPONENTS
-import Title from './title/Title.jsx'
 import Subtitle from './subtitle/Subtitle.jsx'
-
+import Title from './title/Title.jsx'
 //  STYLES
-import style from './preview.module.scss'
+import style from './aboutus.module.scss'
 
-const preview = () => {
+const aboutus = () => {
     return (
-        <div className={style.list}>
+        <div className={style.aboutus}>
             <Title />
+
             <Subtitle />
         </div>
     );
 };
 
-export default preview;
+export default aboutus;

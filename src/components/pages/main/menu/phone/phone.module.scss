@@ -1,0 +1,11 @@
+.phone{
+    display: flex;
+    flex-direction: row;
+    
+    &__link{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        text-decoration: none;
+        color: #fff;
+    }
+}

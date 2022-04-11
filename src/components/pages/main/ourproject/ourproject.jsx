@@ -1,7 +1,7 @@
 import React from 'react';
 
 //  COMPONENTS
-import Product from './product/product.jsx'
+import Product from './product/Product.jsx'
 //  STYLES
 import style from './ourproject.module.scss'
 
@@ -17,7 +17,7 @@ const ourproject = () => {
                     </svg>
                 </button>
                 <div className={style.ourproject__wrapper__list}>
-                    <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img = 'productimg\ourProducts__img__1.svg'/>
+                    <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' />
                     <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img = 'productimg\ourProducts__img__1.svg'/>
                     <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img = 'productimg\ourProducts__img__2.svg'/>
                     <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img = 'productimg\ourProducts__img__3.svg'/>

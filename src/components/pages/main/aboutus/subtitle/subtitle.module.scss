@@ -1,0 +1,17 @@
+.subtitle{
+    display: flex;
+    flex-direction: column;
+
+    &__header{
+        margin: 0px;
+        margin-bottom: 44px;
+        margin-left: 28px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #fff;
+        text-transform: uppercase;
+    }
+}

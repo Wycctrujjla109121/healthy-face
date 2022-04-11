@@ -1,7 +1,7 @@
 import React from 'react';
 
 //  STYLES
-import style from '.././preview.module.scss'
+import style from './title.module.scss'
 
 const title = () => {
     return (

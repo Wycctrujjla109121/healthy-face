@@ -1,0 +1,29 @@
+.title{
+    display: flex;
+    flex-direction: column;
+
+    &__header{
+        margin: 0px;
+
+        text-transform: uppercase;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #fff;
+    }
+    &__slogan{
+        margin: 0px;
+        margin-top: 40px;
+
+        width: 100%;
+        max-width: 460px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+
+        color: #fff;
+    }
+}

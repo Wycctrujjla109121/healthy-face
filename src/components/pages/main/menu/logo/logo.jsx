@@ -1,7 +1,7 @@
 import React from 'react';
 
 // STYLE 
-import style from '.././menu.module.scss'
+import style from './logo.module.scss'
 const logo = () => {
     return (
         <div className={style.logo}>

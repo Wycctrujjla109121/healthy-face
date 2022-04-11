@@ -1,7 +1,7 @@
 import React from 'react';
 
 //  STYLES
-import style from '.././preview.module.scss'
+import style from './subtitle.module.scss'
 const subtitle = () => {
     return (
         <div className={style.subtitle}>

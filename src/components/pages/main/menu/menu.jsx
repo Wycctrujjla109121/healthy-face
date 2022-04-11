@@ -1,9 +1,9 @@
 import React from 'react';
 
 //  COMPONENTS 
-import Logo from './logo/logo.jsx'
-import Link from './link/link.jsx'
-import Phone from './phone/phone.jsx'
+import Logo from './logo/Logo.jsx'
+import Link from './link/Link.jsx'
+import Phone from './phone/Phone.jsx'
 
 //  STYLE
 import style from './menu.module.scss'
