@@ -1,18 +1,13 @@
 import React from 'react';
 
-//  COMPONENTS
-import Contact from './contact/Contact.jsx'
-import Partner from './partner/Partner.jsx';
-import Map from './map/Map.jsx'
 //  STYLES
 import style from './contacts.module.scss'
 
 const contacts = () => {
     return (
         <div className={style.contacts}>
-            <Contact />
-            <Partner />
-            <Map />
+            <a className={style.contacts__email} href="#">healthyface@mail.com</a>
+            <a className={style.contacts__phone} href="#">+7 999 999-99-99</a>
         </div>
     );
 };

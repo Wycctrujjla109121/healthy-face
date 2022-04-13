@@ -1,0 +1,26 @@
+.link {
+    display: flex;
+    flex-direction: row;
+    column-gap: 32px;
+
+    margin-top: 32px;
+    margin-left: 6px;
+
+    &__mail {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #DA6836;
+        text-decoration: none;
+    }
+
+    &__phone {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #DA6836;
+        text-decoration: none;
+    }
+}

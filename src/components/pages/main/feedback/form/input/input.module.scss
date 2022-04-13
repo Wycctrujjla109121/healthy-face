@@ -1,0 +1,47 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 46px;
+
+    &__email {
+        background-color: transparent;
+        border: none;
+
+        height: 23px;
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+
+        color: #FFFFFF99;
+
+        border-bottom: 1.2px solid #fff;
+
+        padding: 0px 10px 22px 10px;
+    }
+
+    &__email:focus {
+        outline: none;
+    }
+
+    &__text {
+        background-color: transparent;
+        border: none;
+
+        height: 23px;
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+
+        color: #FFFFFF99;
+
+        border-bottom: 1.2px solid #fff;
+
+        padding: 0px 10px 22px 10px;
+    }
+
+    &__text:focus {
+        outline: none;
+    }
+}
