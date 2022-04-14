@@ -1,8 +1,8 @@
-.item{
+.item {
     display: flex;
     flex-direction: column;
 
-    &__title{
+    &__title {
         margin: 0px;
 
         font-family: 'Raleway', sans-serif;
@@ -12,8 +12,8 @@
         color: #fff;
     }
 
-     //  Открытый item
-     &__wrapper__close{
+    //  Открытый item
+    &__wrapper__open {
         display: flex;
         flex-direction: row;
         column-gap: 29px;
@@ -21,6 +21,7 @@
         margin-top: 12px;
 
         width: 100%;
+        max-height: 173px;
 
         border: 1.2px solid #DA6836;
         border-radius: 41px;
@@ -31,15 +32,14 @@
 
         transition: 1s;
 
-        &__btn__close{
-            max-width: 48px;
-            width: 100%;
-            min-width: 48px;
+        &__btn {
+            min-width: 82px;
             height: auto;
 
             background-image: url(./btnImg/close.svg);
             background-repeat: no-repeat;
             background-size: auto;
+            background-position: center;
 
             background-color: transparent;
             border: none;
@@ -47,7 +47,7 @@
     }
 
     //  Закрытый item
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: row;
         column-gap: 29px;
@@ -63,7 +63,7 @@
 
         transition: 1s;
 
-        &__btn{
+        &__btn {
             min-width: 82px;
             height: auto;
 
@@ -75,7 +75,8 @@
             background-color: transparent;
             border: none;
         }
-        &__text{
+
+        &__text {
             max-width: 1240px;
             width: 100%;
             min-width: 354px;

@@ -3,30 +3,16 @@ import React, { useRef } from 'react';
 //  STYLES
 import style from './item.module.scss'
 
-//  Script
-const wrapper = React.createRef()
-const btn = React.createRef()
-function open(){
-    if (wrapper.current.className == style.item__wrapper)
-    {
-        wrapper.current.className = style.item__wrapper__close;
 
-        btn.current.className = style.item__wrapper__close__btn__close;
-    }
-    else{
-        wrapper.current.className = style.item__wrapper;
-
-        btn.current.className = style.item__wrapper__btn;
-    }
-}
-
-const item = (props) => {
+const item = ({faq, index, toggleFAQ}) => {
     return (
         <div className={style.item}>
-            <h2 className={style.item__title}>{props.title}</h2>
-            <div className={style.item__wrapper} ref={wrapper}>
-                <button className={style.item__wrapper__btn} onClick={open} ref={btn}></button>
-                <p className={style.item__wrapper__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor </p>
+            <h2 className={style.item__title}>{faq.question}</h2>
+            <div className={(faq.open ? style.item__wrapper__open : style.item__wrapper)} key={index}>
+
+                <button className={(faq.open ? style.item__wrapper__open__btn : style.item__wrapper__btn)} onClick={() => toggleFAQ(index)}></button>
+                <p className={style.item__wrapper__text}>{faq.answer}</p>
+
             </div>
         </div>
     );
