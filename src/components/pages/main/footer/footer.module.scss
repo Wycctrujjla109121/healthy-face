@@ -8,6 +8,23 @@
     margin-top: 212px;
     margin-bottom: 48px;
 
-    width: 100%;
     max-width: 1420px;
+    width: 100%;
+    min-width: 320px;
+}
+
+@media screen and(max-width: 1024px) {
+    .footer{
+        margin-top: 203px;
+    }
+}
+@media screen and(max-width: 420px) {
+    .footer{
+        margin-top: 170px;
+    }
+}
+@media screen and(max-width: 320px) {
+    .footer{
+        margin-top: 134px;
+    }
 }

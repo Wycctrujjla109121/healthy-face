@@ -14,3 +14,21 @@
         color: #DA6836;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .logo{
+
+        &__text{
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .logo{
+
+        &__text{
+            font-size: 24px;
+        }
+    }
+}

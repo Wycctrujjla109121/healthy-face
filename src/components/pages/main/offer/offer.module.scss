@@ -1,7 +1,7 @@
 .offer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    column-gap: 62px;
     align-items: center;
 
     width: 100%;
@@ -24,5 +24,84 @@
     }
     &__img{
         // Возможно будет дополнено
+    }
+}
+
+@media screen and (max-width: 1550px){
+    .offer{
+        max-width: 1180px;
+
+        column-gap: 111px;
+
+        padding: 0px 30px;
+
+        &__text{
+            font-size: 52px;
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .offer{
+        max-width: 928px;
+
+        column-gap: 56px;
+
+        &__text{
+            font-size: 40px;
+        }
+
+        &__img{
+            width: 296px;
+            height: 334px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .offer{
+        max-width: 720px;
+
+        column-gap: 14px;
+
+        padding: 0px 24px;
+
+        &__text{
+            font-size: 32px;
+        }
+
+        &__img{
+            width: 296px;
+            height: 445px;
+        }
+    }
+}
+
+@media screen and (max-width: 615px){
+    .offer{
+        flex-direction: column;
+        row-gap: 50px;
+
+        padding: 0px 16px;
+
+        &__img{
+            align-self: flex-end;
+        }
+    }
+}
+@media screen and (max-width: 392px){
+    .offer{
+        row-gap: 70px;
+
+        &__text{
+            font-size: 24px;
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .offer{
+        row-gap: 82px;
+
+        &__text{
+            font-size: 21px;
+        }
     }
 }

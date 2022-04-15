@@ -42,3 +42,28 @@
         color: #fff;
     }
 }
+
+@media screen and (max-width: 1391px){
+    .partner{
+        order: 3;
+
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 1024px){
+    .partner{
+
+        &__title{
+            font-size: 18px;
+        }
+
+        &__text{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 887px){
+    .partner{
+        margin-left: unset;
+    }
+}

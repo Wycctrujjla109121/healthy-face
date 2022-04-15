@@ -1,14 +1,58 @@
 .showspray{
     display: flex;
+    justify-content: center;
+
     margin: 0 auto;
     margin-top: 60px;
 
     max-width: 209px;
     width: 100%;
+    min-width: 320px;
+
     height: 209px;
 
     &__btn{
+        width: 100%;
+        max-width: 209px;
+
+
+        background-image: url(./ellipse.img/ellipse.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
         border: none;
         background-color: transparent;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #DA6836;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .showspray{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .showspray{
+
+        &__btn{
+            font-size: 16px;
+
+            background-size: 175px;
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .showspray{
+
+        &__btn{
+            font-size: 14px;
+
+            background-size: 148px;
+        }
     }
 }

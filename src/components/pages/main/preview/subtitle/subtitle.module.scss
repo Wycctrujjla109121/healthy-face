@@ -1,50 +1,10 @@
-.subtitle{
+.subtitle {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    &__container{
-        display: flex;
-        flex-direction: column;
-    }
-    &__wrapper{
-        display: flex;
-        flex-direction: row;
-    }
-    &__text{
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        color: #fff;
-
-        margin: 0px;
-        margin-bottom: 63px;
-
-        width: 100%;
-        max-width: 328px;
-    }
-    &__wrapper__button{
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        text-align: left;
-
-        background-color: transparent;
-
-        border: none;
 
 
-        color: #fff;
-
-        padding: 0px;
-
-        margin-right: 21px;
-    }
-    &__wrapper__img{
-        display: flex;
-        align-self: center;
-    }
-    &__slogan{
+    &__slogan {
         display: flex;
         align-self: flex-end;
 
@@ -55,8 +15,70 @@
         font-size: 96px;
         color: #fff;
     }
-    &__span{
-        white-space:pre;
+
+    &__span {
+        white-space: pre;
         font-style: italic;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .subtitle {
+
+        &__slogan {
+            font-size: 64px;
+        }
+
+        &__span {
+            font-size: 64px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .subtitle {
+        justify-content: right;
+    }
+}
+
+@media screen and (max-width: 669px) {
+    .subtitle {
+
+        &__slogan {
+            font-size: 40px;
+
+        }
+
+        &__span {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .subtitle {
+        
+        &__slogan {
+            font-size: 36px;
+
+            padding-bottom: 60px;
+        }
+
+        &__span {
+            font-size: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .subtitle {
+
+        &__slogan {
+            font-size: 36px;
+        }
+
+        &__span {
+            font-size: 36px;
+        }
     }
 }

@@ -20,6 +20,7 @@
         display: inline-block;
 
         width: 32px;
+        min-width: 32px;
         height: 32px;
 
         border: 1.2px solid #DA6836;
@@ -36,5 +37,37 @@
         font-size: 20px;
 
         color: #fff;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .agreement{
+
+        &__text{
+            font-size: 18px;
+
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .agreement{
+
+        &__text{
+            font-size: 16px;
+        }
+
+    }
+}
+@media screen and (max-width: 340px){
+    .agreement{
+
+    &__checkbox+label::before {
+        width: 28px;
+        min-width: 28px;
+        height: 28px;
+    }
+        &__text{
+            font-size: 14px;
+        }
     }
 }

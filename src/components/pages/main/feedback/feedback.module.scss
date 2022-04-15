@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
 
-    width: 100%;
     max-width: 1420px;
+    width: 100%;
+    min-width: 320px;
 
     margin: 0 auto;
     margin-top: 230px;
@@ -35,5 +36,48 @@
         &__italic {
             font-style: italic;
         }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .feedback {
+        padding: 0px 48px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .feedback {
+        margin-top: 146px;
+
+        &__header{
+            font-size: 18px;
+        }
+        &__paragraf{
+            font-size: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feedback {
+        margin-top: 186px;
+
+        padding: 0px 24px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .feedback {
+
+        padding: 0px 16px;
+
+        &__paragraf{
+            font-size: 27px;
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    .feedback {
+        margin-top: 320px;
     }
 }

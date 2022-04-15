@@ -1,15 +1,15 @@
-.item{
+.item {
     display: flex;
     flex-direction: column;
 
     width: 100%;
     max-width: 292px;
 
-    &__img{
+    &__img {
         width: 100%;
     }
 
-    &__info{
+    &__info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -17,7 +17,7 @@
 
         margin-top: 15px;
 
-        &__text{
+        &__text {
             margin: 0px;
 
             font-family: 'Raleway', sans-serif;
@@ -27,12 +27,12 @@
             color: #fff;
         }
 
-        &__price{
+        &__price {
             display: flex;
             flex-direction: row;
             column-gap: 8px;
 
-            &__priceOld{
+            &__priceOld {
                 margin: 0px;
 
                 font-family: 'Raleway', sans-serif;
@@ -41,9 +41,10 @@
 
                 color: #FFFFFF80;
                 text-decoration: line-through;
+                font-feature-settings: 'pnum', 'lnum';
             }
 
-            &__priceNew{
+            &__priceNew {
                 margin: 0px;
 
                 font-family: 'Raleway', sans-serif;
@@ -51,12 +52,13 @@
                 font-weight: 600;
 
                 color: #fff;
+                font-feature-settings: 'pnum', 'lnum';
             }
         }
 
     }
 
-    &__btn{
+    &__btn {
         margin-top: 15px;
 
         padding: 0px;
@@ -74,7 +76,8 @@
 
         position: relative;
     }
-    &__btn::before{
+
+    &__btn::before {
         display: inline-block;
         content: '';
 
@@ -87,5 +90,99 @@
         background-image: url(../itemBg/Arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .item {
+        max-width: 263px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .item {
+        max-width: 215px;
+
+        &__info {
+
+            &__text {
+                font-size: 18px;
+            }
+
+            &__price {
+
+                &__priceOld {
+                    font-size: 18px;
+                }
+
+                &__priceNew {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        max-width: 215px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .item {
+        max-width: 174px;
+
+        &__info {
+
+            &__text {
+                font-size: 16px;
+            }
+
+            &__price {
+
+                &__priceOld {
+                    font-size: 16px;
+                }
+
+                &__priceNew {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 433px) {
+    .item {
+        max-width: 144px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .item{
+
+        &__info {
+
+            &__text {
+                font-size: 14px;
+            }
+
+            &__price {
+
+                &__priceOld {
+                    font-size: 14px;
+                }
+
+                &__priceNew {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 345px) {
+    .item {
+        max-width: 132px;
     }
 }

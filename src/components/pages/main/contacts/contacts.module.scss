@@ -1,11 +1,67 @@
 .contacts{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 122px;
 
     margin: 0 auto;
     margin-top: 250px;
 
-    width: 100%;
     max-width: 1420px;
+    width: 100%;
+    min-width: 320px;
+}
+
+@media screen and (max-width: 1550px){
+    .contacts{
+        padding: 0px 30px;
+
+        row-gap: 89px;
+        column-gap: 79px;
+    }
+}
+@media screen and (max-width: 1392px){
+    .contacts{
+        padding: 0px 30px;
+
+        justify-content: space-between;
+        row-gap: 89px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .contacts{
+        padding: 0px 16px;
+
+        margin-top: 258px;
+
+    }
+}
+@media screen and (max-width: 887px){
+    .contacts{
+        flex-direction: column;
+        row-gap: 64px;
+    }
+}
+@media screen and (max-width: 768px){
+    .contacts{
+        margin-top: 186px;
+    }
+
+}
+@media screen and (max-width: 420px){
+    .contacts{
+        margin-top: 156px;
+    }
+    
+}
+@media screen and (max-width: 360px){
+    .contacts{
+        margin-top: 154px;
+    }
+    
+}
+@media screen and (max-width: 320px){
+    .contacts{
+        margin-top: 196px;
+    }
 }

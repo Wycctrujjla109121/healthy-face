@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
 
+    overflow: hidden;
+
     &__header{
         margin: 0px;
         margin-bottom: 44px;
@@ -13,5 +15,22 @@
 
         color: #fff;
         text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .subtitle{
+
+        &__header{
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width: 930px){
+    .subtitle{
+
+        &__header{
+            margin-left: 0px;
+        }
     }
 }

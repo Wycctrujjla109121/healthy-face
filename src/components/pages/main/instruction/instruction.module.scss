@@ -1,6 +1,7 @@
 .instruction{
     width: 100%;
     max-width: 1420px;
+    min-width: 320px;
 
     margin: 0 auto;
     margin-top: 252px;
@@ -15,6 +16,41 @@
         color: #fff;
         text-transform: uppercase;
     }
+}
 
-    
+@media screen and (max-width: 1550px){
+    .instruction{
+        padding: 0px 48px;
+
+        margin-top: 222px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .instruction{
+        margin-top: 179px;
+    }
+}
+@media screen and (max-width: 768px){
+    .instruction{
+        padding: 0px 24px;
+
+        margin-top: 186px;
+    }
+}
+@media screen and (max-width: 420px){
+    .instruction{
+        padding: 0px 16px;
+
+        margin-top: 158px;
+    }
+}
+@media screen and (max-width: 460px){
+    .instruction{
+        margin-top: 138px;
+    }
+}
+@media screen and (max-width: 320px){
+    .instruction{
+        margin-top: 78px;
+    }
 }

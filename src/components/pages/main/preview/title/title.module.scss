@@ -12,3 +12,29 @@
         color: #fff;
     }
 }
+
+@media screen and (max-width: 1550px){
+    .title{
+
+        &__text{
+            font-size: 64px;
+        }
+    }
+}
+
+@media screen and (max-width: 669px){
+    .title{
+
+        &__text{
+            font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width: 350px){
+    .title{
+
+        &__text{
+            font-size: 36px;
+        }
+    }
+}

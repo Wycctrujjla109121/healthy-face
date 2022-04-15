@@ -1,0 +1,50 @@
+.description {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+
+        margin: 0px;
+        margin-bottom: 63px;
+
+        width: 100%;
+        max-width: 328px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+
+        &__button {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: left;
+
+            background-color: transparent;
+
+            border: none;
+
+            color: #fff;
+
+            padding: 0px;
+
+            margin-right: 21px;
+        }
+    }
+
+    &__img {
+        display: flex;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .description{
+        display: none;
+    }
+}

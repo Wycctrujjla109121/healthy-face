@@ -41,7 +41,7 @@ const main = () => {
 
             <Feedback />
 
-            <Footer />
+            <Footer /> 
         </div>
     );
 };

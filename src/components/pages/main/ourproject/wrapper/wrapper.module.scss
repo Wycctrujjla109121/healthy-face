@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+    &__btn {
+        background-color: transparent;
+
+        border: none;
+    }
+
+    &__btn__img {
+        // Потому будет дополнено
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+
+        margin: 0px 5px;
+
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .wrapper{
+
+        &__btn{
+            display: none;
+        }
+    }
+}

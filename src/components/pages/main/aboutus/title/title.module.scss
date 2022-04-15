@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
 
+    max-width: 460px;
+    width: 100%;
+    min-width: 460px;
+
     &__header{
         margin: 0px;
 
@@ -25,5 +29,34 @@
         font-weight: 400;
 
         color: #fff;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .title{
+
+        width: 100%;
+        max-width: 460px;
+        min-width: auto;
+        &__header{
+            font-size: 18px;
+        }
+
+        &__slogan{
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .title{
+
+        &__header{
+            font-size: 18px;
+        }
+
+        &__slogan{
+            font-size: 16px;
+        }
     }
 }

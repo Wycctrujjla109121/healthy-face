@@ -16,3 +16,9 @@
         text-transform: uppercase;
     }
 }
+@media screen and (max-width: 420px){
+    .link{
+        flex-direction: column;
+        row-gap: 5px;
+    }
+}

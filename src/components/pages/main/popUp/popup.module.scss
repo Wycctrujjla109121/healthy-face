@@ -1,0 +1,57 @@
+.popup__active{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+
+    width: 307px;
+    height: 376px;
+
+    background-color: #fff;
+
+    transition: height, 1s;
+
+}
+.popup__disable{
+    position: fixed;
+    right: 0px;
+    top: -300px;
+
+    width: 307px;
+    height: 0px;
+
+    transition: height, 1s;
+}
+
+@media screen and (max-width: 420px){
+    .popup__active{
+        max-width: 420px;
+        width: 100%;
+        height: 376px;
+    }
+    .popup__disable{
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .popup__active{
+        max-width: 360px;
+        width: 100%;
+        height: 315px;
+    }
+    .popup__disable{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .popup__active{
+        max-width: 320px;
+        width: 100%;
+        height: 312px;
+    }
+    .popup__disable{
+        width: 320px;
+    }
+}
+

@@ -1,6 +1,12 @@
-body{
+*{
+    box-sizing: border-box;
+}
+html, body{
     margin: 0px;
+    padding: 0px;
 
     /* Тестовый вариант */
     background-color: #2D2D2D;
+
+    min-width: 320px;
 }

@@ -1,22 +1,22 @@
-.item{
+.item {
     display: flex;
     flex-direction: row;
     gap: 10px;
 
     width: 100%;
-    max-width: 692px;
+    max-width: 690px;
 
-    &__info{
+    &__info {
         display: flex;
         flex-direction: column;
 
-        &__text{
+        &__text {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 54px;
 
-            &__number{
+            &__number {
                 margin: 0px;
 
                 font-family: 'Playfair Display', serif;
@@ -24,8 +24,10 @@
                 font-weight: 400;
 
                 color: #fff;
+                font-feature-settings: 'pnum', 'lnum';
             }
-            &__desc{
+
+            &__desc {
                 margin: 0px;
 
                 font-family: 'Raleway', sans-serif;
@@ -39,10 +41,11 @@
 
                 position: relative;
             }
-            &__desc::before{
+
+            &__desc::before {
                 display: inline-block;
                 content: '';
-                
+
                 position: absolute;
                 top: -5px;
                 left: -27px;
@@ -54,7 +57,7 @@
             }
         }
 
-        &__slogan{
+        &__slogan {
             margin: 0px;
             margin-top: 23px;
 
@@ -69,7 +72,72 @@
         }
     }
 
-    &__img{
+    &__img {
         // Возможно будет изменено
+        width: 300px;
+        height: 448px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .item {
+        max-width: 569px;
+
+        &__img {
+            width: 270px;
+            height: 403px;
+        }
+    }
+}
+
+@media screen and (max-width: 1278px){
+    .item{
+        width: 569px;
+
+
+        &__info{
+
+            &__text{
+                width: 290px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .item{
+        
+        &__info{
+
+            &__text{
+
+                &__number{
+                    font-size: 52px;
+                }
+
+                &__desc{
+                    font-size: 16px;
+                }
+
+                &__slogan{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .item{
+        flex-direction: column;
+
+        &__info{
+
+            &__text{
+
+                &__number{
+                    font-size: 48px;
+                }
+            }
+        }
     }
 }

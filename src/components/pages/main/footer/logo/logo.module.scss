@@ -19,3 +19,21 @@
         color: #DA6836;
     }
 }
+
+@media screen and(max-width: 1024px) {
+    .logo{
+
+        &__title{
+            font-size: 20px;
+        }
+    }
+}
+@media screen and(max-width: 420px) {
+    .link{
+
+
+        &__title{
+            font-size: 16px;
+        }
+    }
+}

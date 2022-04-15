@@ -30,3 +30,20 @@
         border: none;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .btn{
+
+        &__left{
+            background-image: url(./btnBg/Arrow_left_1024.svg);
+
+            height: 50px;
+        }
+
+        &__right{
+            background-image: url(./btnBg/Arrow_right_1024.svg);
+
+            height: 50px;
+        }
+    }
+}

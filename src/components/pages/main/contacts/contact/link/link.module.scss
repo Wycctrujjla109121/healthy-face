@@ -22,5 +22,13 @@
 
         color: #DA6836;
         text-decoration: none;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .link{
+        flex-direction: column;
+        row-gap: 5px;
     }
 }

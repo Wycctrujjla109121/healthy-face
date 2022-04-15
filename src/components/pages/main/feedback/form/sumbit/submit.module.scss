@@ -23,3 +23,12 @@
         // Возможно будет дополнено
     }
 }
+
+@media screen and (max-width: 420px){
+    .submit{
+
+        &__btn{
+            font-size: 18px;
+        }
+    }
+}

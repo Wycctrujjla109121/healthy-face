@@ -7,6 +7,7 @@
     max-width: 960px;
 
     overflow: hidden;
+
     &__text{
         padding: 0px 28px 16px 28px;
 
@@ -37,5 +38,21 @@
     }
     &__text:nth-child(+n+4){
         border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .grid{
+
+        &__text{
+
+            &__title{
+                font-size: 16px;
+            }
+            
+            &__desc{
+                font-size: 16px;
+            }
+        }
     }
 }

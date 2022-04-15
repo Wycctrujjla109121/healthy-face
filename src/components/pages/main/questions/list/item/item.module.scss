@@ -21,7 +21,6 @@
         margin-top: 12px;
 
         width: 100%;
-        max-height: 173px;
 
         border: 1.2px solid #DA6836;
         border-radius: 41px;
@@ -39,10 +38,15 @@
             background-image: url(./btnImg/close.svg);
             background-repeat: no-repeat;
             background-size: auto;
-            background-position: center;
+            background-position: 0px -30px;
 
             background-color: transparent;
             border: none;
+
+            transition: 0.5s;
+        }
+        &__btn:hover{
+            opacity: 0.5;
         }
     }
 
@@ -74,12 +78,16 @@
 
             background-color: transparent;
             border: none;
+
+            transition: 0.5s;
+        }
+        &__btn:hover{
+            opacity: 0.5;
         }
 
         &__text {
             max-width: 1240px;
             width: 100%;
-            min-width: 354px;
 
             margin: 0px;
 
@@ -88,6 +96,45 @@
             font-weight: 400;
 
             color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .item{
+
+        &__title{
+            font-size: 18px;
+        }
+        &__wrapper{
+            &__text{
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .item{
+
+        &__title{
+            font-size: 16px;
+        }
+
+        &__wrapper{
+            &__text{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .item{
+
+        &__wrapper{
+
+            &__text{
+                font-size: 14px;
+            }
         }
     }
 }

@@ -5,8 +5,9 @@
     margin: 0 auto;
     margin-top: 170px;
 
-    width: 100%;
     max-width: 1420px;
+    width: 100%;
+    min-width: 320px;
 
     &__title {
         margin: 0px;
@@ -20,54 +21,51 @@
 
         color: #fff;
     }
+}
 
-    &__show__more {
-        display: flex;
-        justify-content: right;
+@media screen and (max-width: 1550px){
+    .ourproject{
+        max-width: 1180px;
 
-        margin-bottom: 100px;
-        margin-top: 31px;
+        padding: 0px 48px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .ourproject{
+        max-width: 928px;
 
-        &__btn {
-            display: flex;
+        margin-top: 144px;
 
-            max-width: 145px;
-            width: 100%;
-
-            margin-right: 40px;
-
-            background-color: transparent;
-            border: none;
-
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-
-            color: #C4C4C4;
-            text-decoration: underline #C4C4C4;
+        &__title{
+            margin-left: 0px;
         }
     }
+}
+@media screen and (max-width: 768px){
+    .ourproject{
+        max-width: 720px;
 
-    &__wrapper {
-        display: flex;
-        flex-direction: row;
+        margin-top: 125px;
 
-        &__btn {
-            background-color: transparent;
+        padding: 0px 24px;
+    }
+}
+@media screen and (max-width: 420px){
+    .ourproject{
+        max-width: 388px;
 
-            border: none;
-        }
+        margin-top: 107px;
 
-        &__btn__img {
-            // Потому будет дополнено
-        }
-
-        &__list {
-            display: flex;
-            flex-direction: row;
-            gap: 14px;
-
-            margin: 0px 5px;
-        }
+        padding: 0px 16px;
+    }
+}
+@media screen and (max-width: 360px){
+    .ourproject{
+        max-width: 328px;
+    }
+}
+@media screen and (max-width: 320px){
+    .ourproject{
+        max-width: 288px;
     }
 }
