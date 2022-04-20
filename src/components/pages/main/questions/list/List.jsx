@@ -48,7 +48,7 @@ const List = () => {
     return (
         <div className={style.list}>
             {faqs.map((faq, i) => (
-                <Item faq={faq} index={i} toggleFAQ={toggleFAQ}/>
+                <Item faq={faq} index={i} toggleFAQ={toggleFAQ} key={i}/>
             ))}
         </div>
     );

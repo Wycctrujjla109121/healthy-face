@@ -7,17 +7,16 @@ import style from './burger.module.scss'
 
 
 const Burger = () => {
-    const [active, setActive] = useState(false); 
+    const [active, setActive] = useState(false);
 
 
-    function openPopUp(){
-        if(active == true){
+    function openPopUp() {
+        if (active == true) {
             setActive(false)
         }
-        else{
+        else {
             setActive(true)
         }
-        console.log(active)
     }
 
     return (

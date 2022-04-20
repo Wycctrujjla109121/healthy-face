@@ -1,4 +1,4 @@
-.btn{
+.button{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +9,7 @@
         width: 120px;
         height: 30px;
 
-        background-image: url(./btnBg/arrows__pic__left.svg);
+        background-image: url(./svg/arrows__pic__left.svg);
         background-repeat: no-repeat;
         background-size: auto;
         background-color: transparent;
@@ -21,7 +21,7 @@
         width: 120px;
         height: 30px;
 
-        background-image: url(./btnBg/arrows__pic__right.svg);
+        background-image: url(./svg/arrows__pic__right.svg);
         background-repeat: no-repeat;
         background-size: auto;
         background-color: transparent;
@@ -32,16 +32,16 @@
 }
 
 @media screen and (max-width: 1024px){
-    .btn{
+    .button{
 
         &__left{
-            background-image: url(./btnBg/Arrow_left_1024.svg);
+            background-image: url(./svg/Arrow_left_1024.svg);
 
             height: 50px;
         }
 
         &__right{
-            background-image: url(./btnBg/Arrow_right_1024.svg);
+            background-image: url(./svg/Arrow_right_1024.svg);
 
             height: 50px;
         }

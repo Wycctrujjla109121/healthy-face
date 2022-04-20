@@ -1,4 +1,4 @@
-.order{
+.order {
     display: flex;
     flex-direction: column;
 
@@ -9,9 +9,7 @@
     width: 100%;
     min-width: 320px;
 
-    margin-bottom: 150px;
-
-    &__header{
+    &__header {
         margin: 0px;
 
         font-family: 'Raleway', sans-serif;
@@ -22,11 +20,9 @@
         text-transform: uppercase;
     }
 
-    &__list{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
 
         row-gap: 77px;
         column-gap: 84px;
@@ -35,60 +31,75 @@
     }
 }
 
-@media screen and (max-width: 1550px){
-    .order{
+@media screen and (max-width: 1550px) {
+    .order {
         padding: 0px 48px;
 
-
-        &__list{
+        &__list {
             row-gap: 77px;
             column-gap: 42px;
         }
     }
 }
-@media screen and (max-width: 1024px){
-    .order{
 
+@media screen and (max-width: 1024px) {
+    .order {
         margin-top: 162px;
-        &__list{
+
+        &__list {
             column-gap: 69px;
+
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
-@media screen and (max-width: 768px){
-    .order{
+
+@media screen and (max-width: 768px) {
+    .order {
         padding: 0px 24px;
 
         margin-top: 190px;
-        &__list{
+
+        &__list {
             row-gap: 56px;
             column-gap: 37px;
         }
     }
 }
-@media screen and (max-width: 420px){
-    .order{
+@media screen and (max-width: 615px) {
+    .order {
+        &__list {
+            align-self: center;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .order {
         padding: 0px 16px;
 
         margin-top: 107px;
 
-        &__list{
+        &__list {
             row-gap: 60px;
             column-gap: 40px;
         }
     }
 }
-@media screen and (max-width: 360px){
-    .order{
 
-        &__list{
+@media screen and (max-width: 360px) {
+    .order {
+
+        &__list {
             row-gap: 40px;
             column-gap: 24px;
         }
     }
 }
-@media screen and (max-width: 320px){
-    .order{
+
+@media screen and (max-width: 320px) {
+    .order {
         margin-top: 125px;
     }
 }

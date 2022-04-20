@@ -8,7 +8,7 @@
     min-height: 329px;
     height: 100%;
 
-    background-image: url(./productbg/ourProducts__img__0.svg);
+    background-image: url(./svg/ourProducts__img__0.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -20,48 +20,48 @@
 
         margin: 20px 20px 18px 20px;
         height: 100%;
-
-        &__price {
-            display: flex;
-            flex-direction: column;
-
-            &__priceNew {
-                display: flex;
-                margin: 0px;
-
-                font-family: 'Raleway', sans-serif;
-                font-size: 18px;
-                font-weight: 600;
-
-                color: #fff;
-                font-feature-settings: 'pnum' on, 'lnum' on;
-            }
-
-            &__priceOld {
-                margin: 0px;
-
-                font-family: 'Raleway', sans-serif;
-                font-size: 18px;
-                font-weight: 400;
-
-                color: #FFFFFF80;
-                text-decoration: line-through;
-                font-feature-settings: 'pnum' on, 'lnum' on;
-            }
-        }
-
-        &__text {
-            margin: 0px;
-
-            font-family: 'Raleway', sans-serif;
-            font-size: 18px;
-            font-weight: 600;
-
-            color: #fff;
-        }
     }
 
-    &__btn {
+    &__price {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__priceNew {
+        display: flex;
+        margin: 0px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+
+        color: #fff;
+        font-feature-settings: 'pnum', 'lnum';
+    }
+
+    &__priceOld {
+        margin: 0px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+
+        color: #FFFFFF80;
+        text-decoration: line-through;
+        font-feature-settings: 'pnum', 'lnum';
+    }
+
+    &__text {
+        margin: 0px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+
+        color: #fff;
+    }
+
+    &__button {
         position: relative;
 
         background-color: transparent;
@@ -93,7 +93,7 @@
 
             content: '';
 
-            background-image: url(./Arrow1.svg);
+            background-image: url(./svg/Arrow1.svg);
             background-repeat: no-repeat;
         }
     }

@@ -1,18 +1,23 @@
-.popup__active{
-    position: fixed;
-    right: 0px;
+.hide {
+    position: none;
     top: 0px;
+    left: 0px;
 
-    width: 307px;
-    height: 376px;
+    width: 100%;
+    height: 100%;
 
-    background-color: #fff;
+    z-index: -1;
 
-    transition: height, 1s;
-
+    // модификатор
+    &_active {
+        position: fixed;
+    }
 }
-.popup__disable{
+
+.popup {
     position: fixed;
+    z-index: 101;
+
     right: 0px;
     top: -300px;
 
@@ -20,38 +25,50 @@
     height: 0px;
 
     transition: height, 1s;
-}
 
-@media screen and (max-width: 420px){
-    .popup__active{
-        max-width: 420px;
-        width: 100%;
+    // Модификатор
+    &_active {
+        right: 0px;
+        top: 0px;
+
         height: 376px;
+
+        background-color: #fff;
     }
-    .popup__disable{
+}
+
+@media screen and (max-width: 420px) {
+    .popup {
         width: 420px;
+
+        &_active {
+            max-width: 420px;
+            width: 100%;
+            height: 376px;
+        }
     }
 }
 
-@media screen and (max-width: 360px){
-    .popup__active{
-        max-width: 360px;
-        width: 100%;
-        height: 315px;
-    }
-    .popup__disable{
+@media screen and (max-width: 360px) {
+    .popup {
         width: 360px;
+
+        &_active {
+            max-width: 360px;
+            width: 100%;
+            height: 315px;
+        }
     }
 }
 
-@media screen and (max-width: 320px){
-    .popup__active{
-        max-width: 320px;
-        width: 100%;
-        height: 312px;
-    }
-    .popup__disable{
+@media screen and (max-width: 320px) {
+    .popup {
         width: 320px;
+
+        &_active {
+            max-width: 320px;
+            width: 100%;
+            height: 312px;
+        }
     }
 }
-

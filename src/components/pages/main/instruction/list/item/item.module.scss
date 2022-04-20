@@ -9,67 +9,67 @@
     &__info {
         display: flex;
         flex-direction: column;
+    }
 
-        &__text {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 54px;
+    &__block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 54px;
+    }
 
-            &__number {
-                margin: 0px;
+    &__number {
+        margin: 0px;
 
-                font-family: 'Playfair Display', serif;
-                font-size: 64px;
-                font-weight: 400;
+        font-family: 'Playfair Display', serif;
+        font-size: 64px;
+        font-weight: 400;
 
-                color: #fff;
-                font-feature-settings: 'pnum', 'lnum';
-            }
+        color: #fff;
+        font-feature-settings: 'pnum', 'lnum';
+    }
 
-            &__desc {
-                margin: 0px;
+    &__desc {
+        margin: 0px;
 
-                font-family: 'Raleway', sans-serif;
-                font-size: 18px;
-                font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
 
-                color: #fff;
+        color: #fff;
 
-                width: 100%;
-                max-width: 163px;
+        width: 100%;
+        max-width: 163px;
 
-                position: relative;
-            }
+        position: relative;
 
-            &__desc::before {
-                display: inline-block;
-                content: '';
+        &::before {
+            display: inline-block;
+            content: '';
 
-                position: absolute;
-                top: -5px;
-                left: -27px;
+            position: absolute;
+            top: -5px;
+            left: -27px;
 
-                height: 53px;
-                width: 1px;
+            height: 53px;
+            width: 1px;
 
-                background-color: #DA6836;
-            }
+            background-color: #DA6836;
         }
+    }
 
-        &__slogan {
-            margin: 0px;
-            margin-top: 23px;
+    &__slogan {
+        margin: 0px;
+        margin-top: 23px;
 
-            font-family: 'Raleway', sans-serif;
-            font-size: 18px;
-            font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
 
-            color: #fff;
+        color: #fff;
 
-            width: 100%;
-            max-width: 382px;
-        }
+        width: 100%;
+        max-width: 382px;
     }
 
     &__img {
@@ -90,54 +90,40 @@
     }
 }
 
-@media screen and (max-width: 1278px){
-    .item{
+@media screen and (max-width: 1278px) {
+    .item {
         width: 569px;
 
-
-        &__info{
-
-            &__text{
-                width: 290px;
-            }
-        }
-    }
-}
-@media screen and (max-width: 1024px){
-    .item{
-        
-        &__info{
-
-            &__text{
-
-                &__number{
-                    font-size: 52px;
-                }
-
-                &__desc{
-                    font-size: 16px;
-                }
-
-                &__slogan{
-                    font-size: 16px;
-                }
-            }
+        &__block {
+            width: 290px;
         }
     }
 }
 
-@media screen and (max-width: 768px){
-    .item{
+@media screen and (max-width: 1024px) {
+    .item {
+
+
+        &__number {
+            font-size: 52px;
+        }
+
+        &__desc {
+            font-size: 16px;
+        }
+
+        &__slogan {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item {
         flex-direction: column;
 
-        &__info{
-
-            &__text{
-
-                &__number{
-                    font-size: 48px;
-                }
-            }
+        &__number {
+            font-size: 48px;
         }
     }
 }

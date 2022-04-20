@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: row;
 
-    &__btn {
+    &__button {
         background-color: transparent;
 
         border: none;
     }
 
-    &__btn__img {
+    &__img {
         // Потому будет дополнено
     }
 
@@ -26,7 +26,7 @@
 @media screen and (max-width: 1024px){
     .wrapper{
 
-        &__btn{
+        &__button{
             display: none;
         }
     }

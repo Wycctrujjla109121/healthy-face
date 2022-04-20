@@ -5,9 +5,9 @@ import style from './btn.module.scss'
 
 const Btn = () => {
     return (
-        <div className={style.btn}>
-            <button className={style.btn__left}></button>
-            <button className={style.btn__right}></button>
+        <div className={style.button}>
+            <button className={style.button__left}></button>
+            <button className={style.button__right}></button>
         </div>
     );
 };

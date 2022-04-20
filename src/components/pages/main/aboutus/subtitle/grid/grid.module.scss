@@ -1,4 +1,4 @@
-.grid{
+.grid {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -8,51 +8,50 @@
 
     overflow: hidden;
 
-    &__text{
+    &__block {
         padding: 0px 28px 16px 28px;
 
         border-bottom: 1px solid #fff;
         border-left: 1px solid #fff;
-
-        &__title{
-            margin: 0px;
-
-            font-family: 'Raleway', sans-serif;
-            font-size: 18px;
-            font-weight: 600;
-
-            color: #fff;
-        }
-        &__desc{
-            margin: 0px;
-            margin-top: 10px;
-
-            font-family: 'Raleway', sans-serif;
-            font-size: 18px;
-            font-weight: 400;
-
-            color: #fff;
-
-            width: 460px;
-        }
     }
-    &__text:nth-child(+n+4){
+
+    &__block:nth-child(+n+4) {
         border-bottom: none;
+    }
+
+    &__title {
+        margin: 0px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+
+        color: #fff;
+    }
+
+    &__desc {
+        margin: 0px;
+        margin-top: 10px;
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+
+        color: #fff;
+
+        width: 460px;
     }
 }
 
-@media screen and (max-width: 1024px){
-    .grid{
+@media screen and (max-width: 1024px) {
+    .grid {
 
-        &__text{
+        &__title {
+            font-size: 16px;
+        }
 
-            &__title{
-                font-size: 16px;
-            }
-            
-            &__desc{
-                font-size: 16px;
-            }
+        &__desc {
+            font-size: 16px;
         }
     }
 }

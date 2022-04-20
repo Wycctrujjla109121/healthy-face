@@ -10,12 +10,13 @@
         font-family: 'Playfair Display', serif;
         font-size: 36px;
         font-weight: 400;
-        
+
         color: #DA6836;
         text-decoration: none;
         text-transform: uppercase;
     }
 }
+
 @media screen and (max-width: 420px){
     .link{
         flex-direction: column;

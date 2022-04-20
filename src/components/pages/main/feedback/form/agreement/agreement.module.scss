@@ -26,7 +26,7 @@
         border: 1.2px solid #DA6836;
     }
     &__checkbox:checked + label::before{
-        background-image: url(./agreementCheckBg/feedback__check.svg);
+        background-image: url(./svg/feedback__check.svg);
         background-repeat: no-repeat;
         background-position: center;
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 //  img
-import img from './itemBg/ourProducts__img.svg'
+import img from './svg/ourProducts__img.svg'
 // COMPONENTS 
 import Item from './item/Item.jsx'
 //  STYLES
