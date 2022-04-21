@@ -1,0 +1,50 @@
+.buy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+
+    width: 100%;
+    min-width: 200px;
+    
+    &__text {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        font-feature-settings: 'pnum', 'lnum';
+
+        color: #FFFFFF;
+    }
+
+    &__button {
+        padding: 15px 35px;
+
+        border: 1.2px solid #DA6836;
+
+        background-color: transparent;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        font-feature-settings: 'pnum', 'lnum';
+
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .buy{
+        row-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .buy{
+        row-gap: 20px;
+    }
+}

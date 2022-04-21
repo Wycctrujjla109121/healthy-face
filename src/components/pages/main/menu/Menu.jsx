@@ -3,6 +3,7 @@ import React from 'react';
 //  COMPONENTS 
 import Logo from './logo/Logo.jsx'
 import Link from './link/Link.jsx'
+import Cart from './cart/Cart.jsx';
 import Phone from './phone/Phone.jsx'
 import Burger from './burger/Burger.jsx'
 
@@ -13,8 +14,15 @@ const list = (props) => {
     return (
         <div className={style.list}>
             <Logo />
+
             <Link />
-            <Phone />
+
+            <div className={style.list__cart}>
+                <Cart />
+
+                <Phone />
+            </div>
+
             <Burger />
         </div>
     );

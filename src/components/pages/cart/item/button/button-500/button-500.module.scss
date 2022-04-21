@@ -1,0 +1,67 @@
+.button {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 22px;
+    border: 1.2px solid #fff;
+
+    max-width: 119px;
+    min-width: 119px;
+    height: 40px;
+
+    &__remove {
+        width: 15px;
+        height: 0px;
+
+        background-image: url(../svg/minus.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        background-color: transparent;
+        border: none;
+    }
+
+    &__number {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        font-feature-settings: 'pnum', 'lnum';
+
+        color: #FFFFFF;
+    }
+
+    &__add {
+        width: 15px;
+        height: 15px;
+
+        background-image: url(../svg/plus.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 1550px){
+    .button{
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 948px){
+    .button{
+        order: unset;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .button{
+        display: flex;
+    }
+}

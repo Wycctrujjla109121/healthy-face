@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 //  COMPONENTS
-import Popup from '../../popUp/Popup.jsx'
+import Popup from '../../popup/Popup.jsx'
 // STYLES
 import style from './burger.module.scss'
 
