@@ -7,6 +7,7 @@ import Menu from './menu/Menu.jsx'
 import Content from './content/Content.jsx'
 import Footer from './footer/Footer.jsx'
 import Cart from '../cart/Cart.jsx'
+import ProductCard from '../productCard/ProductCard.jsx';
 //  STYLES
 import style from './main.module.scss'
 
@@ -18,7 +19,10 @@ const main = () => {
 
                 <Routes>
                     <Route path="*" element={<Content />} />
+
                     <Route path="cart" element={<Cart />} />
+
+                    <Route path="productCard" element={<ProductCard/>}/>
                 </Routes>
 
                 <Footer />

@@ -1,0 +1,35 @@
+.productCard{
+    display: flex;
+    flex-direction: row;
+    column-gap: 120px;
+
+    max-width: 1420px;
+    width: 100%;
+    min-width: 320px;
+
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1550px){
+    .productCard{
+        padding: 0px 48px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .productCard{
+        column-gap: 51px;
+
+        padding: 0px 24px;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .productCard{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 68px;
+
+        padding: 0px 16px;
+    }
+}

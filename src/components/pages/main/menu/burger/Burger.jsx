@@ -11,7 +11,7 @@ const Burger = () => {
 
 
     function openPopUp() {
-        if (active == true) {
+        if (active === true) {
             setActive(false)
         }
         else {

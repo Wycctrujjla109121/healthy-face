@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //  COMPONENTS
 import Input from './input/Input.jsx'
@@ -7,16 +7,36 @@ import Submit from './sumbit/Submit.jsx';
 //  STYLES
 import style from './form.module.scss'
 
-const form = () => {
+const Form = () => {
+    const [submit, setSubmit] = useState(false)
+
+
+    const Email = React.createRef()
+    const Text = React.createRef()
+    const Checkbox = React.createRef()
+
+    function send() {
+        const email = Email.current.value
+        const text = Text.current.value
+        const checkbox = Checkbox.current.checked
+
+        if (email != '' && text != '' && checkbox == true) {
+            setSubmit(true)
+        }
+        else {
+            setSubmit(false)
+        }
+    }
+
     return (
         <form className={style.form} action="#">
-            <Input />
+            <Input Email={Email} Text={Text} />
 
-            <Agreement />
+            <Agreement Checkbox={Checkbox} />
 
-            <Submit />
+            <Submit send={send} submit={submit} setSubmit={setSubmit} />
         </form>
     );
 };
 
-export default form;
+export default Form;

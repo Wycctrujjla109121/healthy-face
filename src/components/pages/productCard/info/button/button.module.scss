@@ -1,0 +1,47 @@
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 320px;
+
+    margin: 0 auto;
+    // border: 1px solid red;
+
+    &__left{
+        width: 80px;
+        height: 20px;
+
+        background-image: url(./svg/arrows__left.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        border: none;
+        background-color: transparent;
+
+        transition: 0.5s;
+
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+
+    &__right{
+        width: 80px;
+        height: 20px;
+
+        background-image: url(./svg/arrows__right.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        border: none;
+        background-color: transparent;
+
+        transition: 0.5s;
+        
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}

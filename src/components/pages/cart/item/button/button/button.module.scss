@@ -11,15 +11,20 @@
     height: 40px;
 
     &__remove {
-        width: 15px;
-        height: 0px;
-
-        background-image: url(../svg/minus.svg);
-        background-repeat: no-repeat;
-        background-position: center;
+        height: 15px;
 
         background-color: transparent;
         border: none;
+
+        &:hover {
+            .button__remove__svg {
+                stroke: #DA6836;
+            }
+        }
+    }
+
+    &__svg {
+        display: flex;
     }
 
     &__number {
@@ -36,32 +41,42 @@
     }
 
     &__add {
-        width: 15px;
         height: 15px;
-
-        background-image: url(../svg/plus.svg);
-        background-repeat: no-repeat;
-        background-position: center;
 
         background-color: transparent;
         border: none;
+
+        &:hover {
+            .button__add__svg {
+                stroke: #DA6836;
+            }
+        }
     }
 }
 
-@media screen and (max-width: 1550px){
-    .button{
+.button__remove__svg {
+    transition: 0.5s;
+}
+
+.button__add__svg {
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 1550px) {
+    .button {
         order: 1;
     }
 }
 
-@media screen and (max-width: 948px){
-    .button{
+@media screen and (max-width: 948px) {
+    .button {
         order: unset;
     }
 }
 
-@media screen and (max-width: 500px){
-    .button{
+@media screen and (max-width: 500px) {
+    .button {
         display: none;
     }
 }

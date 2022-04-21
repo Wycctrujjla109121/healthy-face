@@ -1,11 +1,17 @@
-.submit{
+.submit {
     display: flex;
-    flex-direction: row;
     justify-content: right;
-    align-items: center;
+    align-items: flex-end;
+
     column-gap: 21px;
 
-    &__button{
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__button {
         display: flex;
         align-items: center;
         column-gap: 21px;
@@ -22,37 +28,92 @@
 
         padding: 0px;
 
-        &::after{
-            content: '';
+        transition: 0.5s;
 
-            display: inline-block;
+        &:hover {
+            color: #DA6836;
 
-            background-image: url(./svg/feedback__arrow.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            .submit__fill {
+                fill: #DA6836;
+            }
+        }
+    }
 
-            width: 143px;
-            height: 7px;
+    &__fill {
+        transition: 0.5s;
+    }
+
+    &__svg__360 {
+        display: none;
+    }
+
+    &__fill__360 {
+        display: none;
+    }
+
+    &__text {
+        // display: none;
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        text-transform: uppercase;
+
+        &__active{
+            display: unset;
+
+            color: #7FCF63;
+        }
+
+        &__disable{
+            display: unset;
+
+            color: #DA6836;
         }
     }
 }
 
-@media screen and (max-width: 420px){
-    .submit{
+@media screen and (max-width: 420px) {
+    .submit {
 
-        &__button{
+        &__button {
             font-size: 18px;
         }
     }
 }
-@media screen and (max-width: 360px){
-    .submit{
 
-        &__button::after{
-            background-image: url(./svg/feedback__arrow_50.svg);
+@media screen and (max-width: 360px) {
+    .submit {
 
-            width: 50px;
-            height: 7px;
+        &__svg__360 {
+            display: unset;
+        }
+
+        &__fill__360 {
+            display: unset;
+            transition: 0.5s;
+        }
+
+        &__svg {
+            display: none;
+        }
+
+        &__fill {
+            display: none;
+        }
+
+        &__button {
+
+            &:hover {
+
+                .submit__fill__360 {
+                    fill: #DA6836;
+                }
+            }
         }
     }
 }

@@ -6,6 +6,12 @@
         background-color: transparent;
 
         border: none;
+
+        transition: 0.5s;
+
+        &:hover{
+            opacity: 0.6;
+        }
     }
 
     &__img {

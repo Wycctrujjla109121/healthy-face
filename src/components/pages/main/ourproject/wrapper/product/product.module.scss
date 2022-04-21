@@ -82,6 +82,8 @@
         color: #000;
         text-align: left;
 
+        transition: 0.5s;
+
         &::after {
             display: inline-block;
             position: absolute;
@@ -95,6 +97,10 @@
 
             background-image: url(./svg/Arrow1.svg);
             background-repeat: no-repeat;
+        }
+
+        &:hover{
+            opacity: 0.6;
         }
     }
 }

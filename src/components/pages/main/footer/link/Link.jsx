@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 //  STYLES
 import style from './link.module.scss'
@@ -6,8 +7,8 @@ import style from './link.module.scss'
 const link = () => {
     return (
         <div className={style.link}>
-            <a className={style.link__text} href="#">Главная</a>
-            <a className={style.link__text} href="#">Наши спреи</a>
+            <NavLink to='/' className={style.link__text}>Главная</NavLink>
+            <NavLink to='productCard' className={style.link__text}>Спреи</NavLink>
             <a className={style.link__text} href="#">Заказать</a>
             <a className={style.link__text} href="#">О нас</a>
         </div>

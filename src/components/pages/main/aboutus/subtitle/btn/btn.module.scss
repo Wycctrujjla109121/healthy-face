@@ -5,6 +5,8 @@
 
     margin-top: 42px;
 
+
+
     &__left{
         width: 120px;
         height: 30px;
@@ -16,6 +18,12 @@
         background-position: center;
 
         border: none;
+
+        transition: 0.5s;
+
+        &:hover{
+            opacity: 0.6;
+        }
     }
     &__right{
         width: 120px;
@@ -28,6 +36,12 @@
         background-position: center;
 
         border: none;
+
+        transition: 0.5s;
+
+        &:hover{
+            opacity: 0.6;
+        }
     }
 }
 

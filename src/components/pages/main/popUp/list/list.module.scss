@@ -36,6 +36,12 @@
 
             color: #2D2D2D;
             text-decoration: none;
+
+            transition: 0.5s;
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
 
         &__phone {
@@ -46,6 +52,12 @@
             font-weight: 300;
 
             color: #2D2D2D;
+
+            transition: 0.5s;
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
 
         &__text {
@@ -58,6 +70,12 @@
 
             color: #2D2D2D;
             text-decoration: none;
+
+            transition: 0.5s;
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 }

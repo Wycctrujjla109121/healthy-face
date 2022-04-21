@@ -8,7 +8,7 @@ const link = () => {
     return (
         <div className={style.link}>
             <NavLink to="/" className={style.link__text}>Главная</NavLink>
-            <a href="#" className={style.link__text}>Наши спреи</a>
+            <NavLink to="/productCard" className={style.link__text}>Cпреи</NavLink>
             <a href="#" className={style.link__text}>Заказать</a>
             <a href="#" className={style.link__text}>О нас</a>
         </div>
