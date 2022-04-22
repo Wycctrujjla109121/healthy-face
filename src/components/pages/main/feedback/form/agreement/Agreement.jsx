@@ -4,8 +4,6 @@ import React from 'react';
 import style from './agreement.module.scss'
 
 const agreement = (props) => {
-
-
     return (
         <div className={style.agreement}>
             <input ref={props.Checkbox} className={style.agreement__checkbox} type="checkbox" id='agreementCheckbox' />

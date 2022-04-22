@@ -76,6 +76,11 @@
 
         position: relative;
 
+        transition: 0.5s;
+        
+        &:hover{
+            opacity: 0.6;
+        }
         &::before {
             display: inline-block;
             content: '';
@@ -143,7 +148,7 @@
 
 @media screen and (max-width: 433px) {
     .item {
-        max-width: 144px;
+        max-width: 174px;
     }
 }
 

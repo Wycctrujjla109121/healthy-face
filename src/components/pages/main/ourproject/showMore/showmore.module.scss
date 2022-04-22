@@ -1,8 +1,7 @@
 .show__more {
     display: flex;
     justify-content: right;
-
-    margin-bottom: 100px;
+    
     margin-top: 31px;
 
     &__btn {
@@ -25,11 +24,29 @@
     }
 }
 
-@media screen and (max-width: 1024px){
-    .show__more{
+@media screen and (max-width: 1024px) {
+    .show__more {
 
-        &__btn{
+        &__btn {
             margin-right: 0px;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .show__more {
+        padding-right: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .show__more {
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .show__more {
+        padding-right: 16px;
     }
 }

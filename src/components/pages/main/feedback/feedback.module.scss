@@ -68,6 +68,7 @@
 
 @media screen and (max-width: 420px) {
     .feedback {
+        margin-top: 144px;
 
         padding: 0px 16px;
 
@@ -76,8 +77,9 @@
         }
     }
 }
-@media screen and (max-width: 420px) {
+
+@media screen and (max-width: 320px) {
     .feedback {
-        margin-top: 320px;
+        margin-top: 124px;
     }
 }

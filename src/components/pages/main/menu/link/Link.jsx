@@ -7,10 +7,10 @@ import style from './link.module.scss'
 const link = () => {
     return (
         <div className={style.link}>
-            <NavLink to="/" className={style.link__text}>Главная</NavLink>
+            <NavLink to="/" className={style.link__text}>О нас</NavLink>
             <NavLink to="/productCard" className={style.link__text}>Cпреи</NavLink>
             <a href="#" className={style.link__text}>Заказать</a>
-            <a href="#" className={style.link__text}>О нас</a>
+            <a href="#" className={style.link__text}>Обратная связь</a>
         </div>
     );
 };

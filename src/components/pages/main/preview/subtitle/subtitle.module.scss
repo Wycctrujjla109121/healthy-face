@@ -7,6 +7,7 @@
     &__slogan {
         display: flex;
         align-self: flex-end;
+        align-self: baseline;
 
         margin: 0px;
 
@@ -26,11 +27,13 @@
     .subtitle {
 
         &__slogan {
-            font-size: 64px;
+            font-size: 72px;
+
+            align-self: center;
         }
 
         &__span {
-            font-size: 64px;
+            font-size: 72px;
         }
     }
 }
@@ -38,11 +41,22 @@
 @media screen and (max-width: 1024px) {
     .subtitle {
         justify-content: right;
+
+        flex-direction: column-reverse;
+
+        row-gap: 55px;
+
+        margin-top: 350px;
+
+        &__slogan {
+            align-self: flex-end;
+        }
     }
 }
 
-@media screen and (max-width: 669px) {
+@media screen and (max-width: 793px) {
     .subtitle {
+        margin-top: 270px;
 
         &__slogan {
             font-size: 40px;
@@ -51,22 +65,38 @@
 
         &__span {
             font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 438px) {
+    .subtitle {
+
+        &__slogan {
+            font-size: 36px;
+        }
+
+        &__span {
+            font-size: 36px;
         }
     }
 }
 
 @media screen and (max-width: 420px) {
     .subtitle {
+        margin-top: 200px;
 
-        &__slogan {
-            font-size: 36px;
-
-            padding-bottom: 60px;
-        }
-
-        &__span {
-            font-size: 36px;
-        }
+        row-gap: 50px;
+    }
+}
+@media screen and (max-width: 398px) {
+    .subtitle {
+        margin-top: 210px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .subtitle {
+        margin-top: 160px;
     }
 }
 

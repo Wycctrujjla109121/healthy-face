@@ -5,7 +5,6 @@ import style from './submit.module.scss'
 
 const Submit = ({send, submit, setSubmit}) => {
 
-
     return (
         <div className={style.submit}>
             <div className={style.submit__wrapper}>

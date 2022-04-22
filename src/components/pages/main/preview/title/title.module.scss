@@ -18,12 +18,12 @@
     .title{
 
         &__text{
-            font-size: 64px;
+            font-size: 72px;
         }
     }
 }
 
-@media screen and (max-width: 669px){
+@media screen and (max-width: 793px){
     .title{
 
         &__text{
@@ -31,11 +31,17 @@
         }
     }
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 438px){
     .title{
 
         &__text{
             font-size: 36px;
         }
+    }
+}
+
+@media screen and (max-width: 420px){
+    .title{
+        padding-top: 0px;
     }
 }

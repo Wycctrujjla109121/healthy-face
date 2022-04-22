@@ -60,3 +60,12 @@
         }
     }
 }
+
+@media screen and (max-width: 510px){
+    .title{
+
+        &__slogan{
+            padding: 0px 16px 0px 0px;
+        }
+    }
+}

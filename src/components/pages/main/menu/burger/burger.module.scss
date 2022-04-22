@@ -1,8 +1,7 @@
 .popup{
 
+    display: none;
     &__burger{
-        display: none;
-    
         width: 40px;
         height: 40px;
     
@@ -17,8 +16,6 @@
 
 @media screen and (max-width: 950px) {
     .popup{
-        &__burger{
             display: flex;
-        }
     }
 }

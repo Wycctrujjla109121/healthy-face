@@ -25,16 +25,14 @@
 
 @media screen and (max-width: 1550px){
     .ourproject{
-        max-width: 1180px;
-
         padding: 0px 48px;
     }
 }
 @media screen and (max-width: 1024px){
     .ourproject{
-        max-width: 928px;
-
         margin-top: 144px;
+
+        padding: 0px 0px 0px 48px;
 
         &__title{
             margin-left: 0px;
@@ -43,29 +41,15 @@
 }
 @media screen and (max-width: 768px){
     .ourproject{
-        max-width: 720px;
-
         margin-top: 125px;
 
-        padding: 0px 24px;
+        padding: 0px 0px 0px 24px;
     }
 }
 @media screen and (max-width: 420px){
     .ourproject{
-        max-width: 388px;
-
         margin-top: 107px;
 
-        padding: 0px 16px;
-    }
-}
-@media screen and (max-width: 360px){
-    .ourproject{
-        max-width: 328px;
-    }
-}
-@media screen and (max-width: 320px){
-    .ourproject{
-        max-width: 288px;
+        padding: 0px 0px 0px 16px;
     }
 }
