@@ -11,13 +11,33 @@
     margin: 0 auto;
     padding-top: 50px;
 
-    border-top: 1.2px solid #fff;
+    position: relative;
+
 
     &__list{
         display: flex;
         flex-direction: column;
         align-self: center;
         row-gap: 45px;
+    }
+
+    &__buy{
+        display: flex;
+    }
+
+    &::before{
+        content: '';
+        display: inline-block;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+
+        border-top: 1.2px solid #fff;
+
+        max-width: 1420px;
+        width: 100%;
     }
 }
 
@@ -31,6 +51,11 @@
 
         flex-direction: column;
         align-items: flex-end;
+
+        &::before{
+            width: calc(100% - 96px);
+            left: 48px;
+        }
     }
 }
 
@@ -38,6 +63,11 @@
     .cart{
         padding-left: 24px;
         padding-right: 24px;
+
+        &::before{
+            width: calc(100% - 48px);
+            left: 24px;
+        }
     }
 }
 
@@ -51,5 +81,10 @@
     .cart{
         padding-left: 16px;
         padding-right: 16px;
+
+        &::before{
+            width: calc(100% - 32px);
+            left: 16px;
+        }
     }
 }
