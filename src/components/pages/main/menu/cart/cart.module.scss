@@ -4,6 +4,8 @@
     align-items: center;
     column-gap: 4px;
 
+    text-decoration: none;
+
     &__header {
         display: flex;
         align-items: center;
@@ -28,7 +30,6 @@
             height: 22px;
 
             background-image: url(./svg/shoppingBag.svg);
-
         }
     }
 }
