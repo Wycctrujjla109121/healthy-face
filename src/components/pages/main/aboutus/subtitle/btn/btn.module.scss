@@ -1,4 +1,4 @@
-.button{
+.button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,7 +7,7 @@
 
 
 
-    &__left{
+    &__left {
         width: 120px;
         height: 30px;
 
@@ -21,11 +21,14 @@
 
         transition: 0.5s;
 
-        &:hover{
+        cursor: pointer;
+
+        &:hover {
             opacity: 0.6;
         }
     }
-    &__right{
+
+    &__right {
         width: 120px;
         height: 30px;
 
@@ -39,29 +42,32 @@
 
         transition: 0.5s;
 
-        &:hover{
+        cursor: pointer;
+
+        &:hover {
             opacity: 0.6;
         }
     }
 }
 
-@media screen and (max-width: 1450px){
-    .button{
+@media screen and (max-width: 1450px) {
+    .button {
         padding: 0px 46px 0px 0px;
     }
 }
-@media screen and (max-width: 1024px){
-    .button{
+
+@media screen and (max-width: 1024px) {
+    .button {
 
         padding: 0px 24px 0px 0px;
 
-        &__left{
+        &__left {
             background-image: url(./svg/Arrow_left_1024.svg);
 
             height: 50px;
         }
 
-        &__right{
+        &__right {
             background-image: url(./svg/Arrow_right_1024.svg);
 
             height: 50px;
@@ -69,8 +75,8 @@
     }
 }
 
-@media screen and (max-width: 420px){
-    .button{
+@media screen and (max-width: 420px) {
+    .button {
         padding: 0px 16px 0px 0px;
     }
 }

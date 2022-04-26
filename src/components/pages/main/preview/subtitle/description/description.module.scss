@@ -19,6 +19,18 @@
         display: flex;
         flex-direction: row;
 
+        cursor: pointer;
+
+        //  Модификатор
+        &:hover{
+
+            .description__img__fill{
+                fill: #DA6836;
+            }
+            .description__button{
+                color: #DA6836;
+            }
+        }
     }
 
     &__button {
@@ -36,11 +48,19 @@
         padding: 0px;
 
         margin-right: 21px;
+
+        cursor: pointer;
+        
+        transition: 0.5s;
     }
 
     &__img {
         display: flex;
         align-self: center;
+
+        &__fill{
+            transition: 0.5s;
+        }
     }
 }
 

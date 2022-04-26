@@ -7,8 +7,7 @@ import style from './burger.module.scss'
 
 
 const Burger = () => {
-    const [active, setActive] = useState(false);
-
+    const [ active, setActive ] = useState(false)
 
     function openPopUp() {
         if (active === true) {

@@ -5,6 +5,8 @@
     width: 100%;
     max-width: 292px;
 
+    cursor: pointer;
+
     &__img {
         width: 100%;
     }
@@ -75,6 +77,8 @@
         text-align: left;
 
         position: relative;
+
+        cursor: pointer;
 
         transition: 0.5s;
         

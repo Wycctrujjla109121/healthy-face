@@ -1,0 +1,45 @@
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+
+    margin-top: 50px;
+    margin-bottom: 222px;
+
+    &__text {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        font-feature-settings: 'pnum', 'lnum';
+
+        color: #FFFFFF;
+
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 209px;
+        width: 100%;
+
+        height: 209px;
+
+        background-image: url(./svg/elipse.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+
+        color: #DA6836;
+        text-decoration: none;
+    }
+}

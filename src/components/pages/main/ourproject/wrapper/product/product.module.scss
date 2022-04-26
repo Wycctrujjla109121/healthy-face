@@ -8,10 +8,11 @@
     min-height: 329px;
     height: 100%;
 
-    background-image: url(./svg/ourProducts__img__0.svg);
+    background-image: url(../product__svg/ourProduct0.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
+    cursor: pointer;
 
     &__info {
         display: flex;
@@ -84,6 +85,8 @@
 
         transition: 0.5s;
 
+        cursor: pointer;
+
 
         &::after {
             display: inline-block;
@@ -100,7 +103,7 @@
             background-repeat: no-repeat;
         }
 
-        &:hover{
+        &:hover {
             opacity: 0.6;
         }
     }

@@ -1,7 +1,6 @@
-.cart{
+.cart {
     display: flex;
-    flex-direction: row;
-    column-gap: 220px;
+    flex-direction: column;
     align-items: center;
 
     max-width: 1420px;
@@ -13,19 +12,29 @@
 
     position: relative;
 
+    &__info {
+        display: flex;
+        flex-direction: row;
+        column-gap: 220px;
+        align-items: center;
+        justify-content: flex-end;
 
-    &__list{
+        max-width: 1420px;
+        width: 100%;
+    }
+
+    &__list {
         display: flex;
         flex-direction: column;
         align-self: center;
         row-gap: 45px;
     }
 
-    &__buy{
+    &__buy {
         display: flex;
     }
 
-    &::before{
+    &::before {
         content: '';
         display: inline-block;
 
@@ -41,48 +50,53 @@
     }
 }
 
-@media screen and (max-width: 1550px){
-    .cart{
+@media screen and (max-width: 1550px) {
+    .cart {
         padding-left: 48px;
         padding-right: 48px;
 
-        column-gap: 106px;
-        row-gap: 45px;
 
-        flex-direction: column;
-        align-items: flex-end;
+        &__info {
+            column-gap: 106px;
+            row-gap: 45px;
 
-        &::before{
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &::before {
             width: calc(100% - 96px);
             left: 48px;
         }
     }
 }
 
-@media screen and (max-width: 768px){
-    .cart{
+@media screen and (max-width: 768px) {
+    .cart {
         padding-left: 24px;
         padding-right: 24px;
 
-        &::before{
+        &::before {
             width: calc(100% - 48px);
             left: 24px;
         }
     }
 }
 
-@media screen and (max-width: 550px){
-    .cart{
-        align-items: unset;
+@media screen and (max-width: 550px) {
+    .cart {
+        &__info{
+            align-items: unset;
+        }
     }
 }
 
-@media screen and (max-width: 420px){
-    .cart{
+@media screen and (max-width: 420px) {
+    .cart {
         padding-left: 16px;
         padding-right: 16px;
 
-        &::before{
+        &::before {
             width: calc(100% - 32px);
             left: 16px;
         }
