@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 //  STYLES
 import style from './buy.module.scss'
@@ -7,7 +8,7 @@ const Buy = () => {
     return (
         <div className={style.buy}>
             <p className={style.buy__text}>Итого: 198$</p>
-            <button className={style.buy__button}>Оформить заказ</button>
+            <NavLink to='order' className={style.buy__button}>Оформить заказ</NavLink>
         </div>
     );
 };

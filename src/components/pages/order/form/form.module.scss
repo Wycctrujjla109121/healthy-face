@@ -1,0 +1,92 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 54px;
+
+    max-width: 360px;
+    width: 100%;
+
+    &__title {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        font-feature-settings: 'pnum', 'lnum';
+
+        color: #FFFFFF;
+
+    }
+
+    &__input {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+
+        color: #FFFFFF;
+
+        background-color: transparent;
+        border: none;
+        border-bottom: 1.2px solid #FFFFFF;
+
+        padding-bottom: 14px;
+
+        // Модификатор
+        &::placeholder {
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        // Модификатор
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        font-feature-settings: 'pnum', 'lnum';
+
+        color: #FFFFFF;
+    }
+
+    &__button {
+        margin-top: 17px;
+
+        display: flex;
+        align-self: flex-start;
+
+        padding: 15px 35px;
+
+        background-color: transparent;
+        border: 1.2px solid #DA6836;
+
+        color: #FFFFFF;
+
+        transition: 0.5s;
+
+        &:hover {
+            color: #DA6836;
+        }
+    }
+}
+@media screen and (max-width: 630px) {
+    .form{
+
+        &__submit{
+            display: none;
+        }
+    }
+}
