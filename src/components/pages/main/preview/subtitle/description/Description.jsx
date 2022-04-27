@@ -6,7 +6,7 @@ import style from './description.module.scss'
 const description = () => {
     return (
         <div className={style.description}>
-            <p className={style.description__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim adipiscing elit ut</p>
+            <p className={style.description__text}>Восстановите свою кожу после повреждений. Мы производим спери, которые помогут сделать ваше лицо здоровым и обеспечат за ним качественный уход. </p>
             <div className={style.description__wrapper}>
                 <button className={style.description__button}>Купить спрей</button>
                 <svg className={style.description__img} width="143" height="8" viewBox="0 0 143 8" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -9,7 +9,7 @@ const contact = () => {
     return (
         <div className={style.contact}>
             <h2 className={style.contact__title}>Контакты. Где найти нас?</h2>
-            <p className={style.contact__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nullaporttitor rhoncus dolor purus non enim praesent </p>
+            <p className={style.contact__text}>Мы работаем онлайн и в лабораториях, в которых ищем новые способы решения проблем с кожей. А также эксперементируем с новыми продуктами для нашей линейки. Вы можете всегда найти нашу поддержку позвонив по телефону и написав на почту, указанные ниже. Мы не имеем собственного офиса продаж, Также вы можете написать нам по любому вопросу или заказать спрей, заполнив форму ниже и задав интересующий вопрос или указав продукт, который хотите приобрести</p>
             <Link />
         </div>
     );

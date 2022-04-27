@@ -7,7 +7,7 @@ const title = () => {
     return (
         <div className={style.title}>
             <h2 className={style.title__header}>о нас</h2>
-            <p className={style.title__slogan}>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nullaporttitor rhoncus dolor purus non enim praesent </p>
+            <p className={style.title__slogan}>Healthy Face была создана в 2021 году для помощи людям с повреждениями кожи - дерматитом.  С этих пор мы активно развиваемся в этой сфере. Наша команда разрабатывает более действенные и простые для использования препараты, постоянно совершенствуя формулы и технологии, которые проходят множество этапов тестирования и, в итоге, оказываются одними из самых качественных в своей области. Мы ручаемся за качество наших продуктов и даем вам возможность самим убедиться в их эффективности.</p>
         </div>
     );
 };
