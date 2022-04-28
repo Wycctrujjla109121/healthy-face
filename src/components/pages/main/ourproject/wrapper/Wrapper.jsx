@@ -21,11 +21,11 @@ const wrapper = () => {
                     <img className={style.wrapper__img} src={btnLeft} alt="" />
                 </button>
                 <div className={style.wrapper__list}>
-                    <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img={img0} />
-                    <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img={img1} />
-                    <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img={img2}/>
-                    <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img={img3}/>
-                    <Product priceNew = '99$' priceOld = '129$' name = 'Phyther' img={img4}/>
+                    <Product priceNew = '1499 р.' priceOld = '2199 р.' name = 'Phyther' img={img0} />
+                    <Product priceNew = '999 р.' priceOld = '1299 р.' name = 'Derma' img={img1} />
+                    <Product priceNew = '1199 р.' priceOld = '1599 р.' name = 'Eco-phyther' img={img2}/>
+                    <Product priceNew = '1299 р.' priceOld = '1599 р.' name = 'Farma' img={img3}/>
+                    <Product priceNew = '799 р.' priceOld = '1199 р.' name = 'Consular' img={img4}/>
                 </div>
                 <button className={style.wrapper__button}>
                     <img className={style.wrapper__img} src={btnRight} alt="" />

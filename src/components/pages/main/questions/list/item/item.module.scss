@@ -32,7 +32,9 @@
         // модификатор
         &_open {
             width: 100%;
-            height: 205px;
+            height: fit-content;
+            max-height: 200px;
+            // transition: 1s;
 
             border: 1.2px solid #DA6836;
             border-radius: 41px;
@@ -88,7 +90,7 @@
         &__wrapper {
 
             &_open {
-                height: 205px;
+                max-height: 300px;
             }
         }
     }
@@ -103,30 +105,6 @@
 
         &__text {
             font-size: 18px;
-        }
-    }
-}
-
-@media screen and (max-width: 910px) {
-    .item {
-
-        &__wrapper {
-
-            &_open {
-                height: 230px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 812px) {
-    .item {
-
-        &__wrapper {
-
-            &_open {
-                height: 250px;
-            }
         }
     }
 }
@@ -150,72 +128,31 @@
         &__wrapper {
 
             &_open {
-                height: 280px;
+                max-height: 380px;
             }
         }
     }
 }
 
-@media screen and (max-width: 546px) {
+
+@media screen and (max-width: 460px) {
     .item {
 
         &__wrapper {
 
             &_open {
-                height: 330px;
+                max-height: 420px;
             }
         }
     }
 }
 
-@media screen and (max-width: 485px) {
-    .item {
-
-        &__wrapper {
-
-            &_open {
-                height: 380px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .item {
-
-        &__wrapper {
-
-            &_open {
-                height: 420px;
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 420px) {
     .item {
 
         &__text {
             font-size: 14px;
-        }
-
-        &__wrapper {
-
-            &_open {
-                height: 350px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 395px) {
-    .item {
-
-        &__wrapper {
-
-            &_open {
-                height: 400px;
-            }
         }
     }
 }
@@ -227,7 +164,7 @@
         &__wrapper {
 
             &_open {
-                height: 450px;
+                max-height: 450px;
             }
         }
     }
@@ -239,19 +176,18 @@
 
             &__button {
                 min-width: 68px;
-                height: 68px;
             }
         }
     }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 325px) {
     .item {
 
         &__wrapper {
 
             &_open {
-                height: 570px;
+                max-height: 500px;
             }
         }
     }
