@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     &__button {
         background-color: transparent;
@@ -27,6 +28,8 @@
         gap: 14px;
 
         margin: 0px 5px;
+
+        width: 100%;
 
         overflow: hidden;
     }
