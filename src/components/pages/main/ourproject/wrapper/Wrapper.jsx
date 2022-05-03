@@ -46,6 +46,24 @@ const Wrapper = () => {
             priceOld: '1199 р.',
             name: 'Consular',
             img: { img4 }
+        },
+        {
+            priceNew: '799 р.',
+            priceOld: '1199 р.',
+            name: 'Consular',
+            img: { img4 }
+        },
+        {
+            priceNew: '799 р.',
+            priceOld: '1199 р.',
+            name: 'Consular',
+            img: { img4 }
+        },
+        {
+            priceNew: 'last',
+            priceOld: '1199 р.',
+            name: 'Consular',
+            img: { img4 }
         }
     ])
 
@@ -69,9 +87,10 @@ const Wrapper = () => {
     }
 
     function handleRightCLick() {
+        // Размер экрана полностью
         let windowScreen = window.innerWidth;
-        let maxWidthList = 0;
         // Максимальная длинна листа 
+        let maxWidthList = 0;
         if (windowScreen > 1550) {
             maxWidthList = 1320;
         }
