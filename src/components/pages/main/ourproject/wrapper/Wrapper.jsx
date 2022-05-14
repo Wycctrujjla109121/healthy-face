@@ -76,7 +76,6 @@ const Wrapper = () => {
     // Переменные для offset
     const maxWidthProduct = 264;
 
-
     function handleLeftClick() {
         setOffset((currentOffset) => {
             const newOffset = currentOffset + maxWidthProduct

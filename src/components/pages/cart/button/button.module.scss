@@ -7,6 +7,11 @@
     margin-top: 50px;
     margin-bottom: 222px;
 
+    // Моддификатор
+    &__hidden{
+        display: none;
+    }
+
     &__text {
         margin: 0px;
 

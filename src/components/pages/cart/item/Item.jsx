@@ -9,14 +9,14 @@ import Button_500 from './button/button-500/Button_500';
 //  STYLES
 import style from './item.module.scss'
 
-const Item = () => {
+const Item = ({name, priceNew, priceOld}) => {
     return (
         <div className={style.wrapper}>
             <div className={style.wrapper__item}>
                 <img className={style.wrapper__img} src={img} alt="Картинка" />
 
                 <div className={style.wrapper__list}>
-                    <Text />
+                    <Text name={name} priceNew={priceNew} priceOld={priceOld}/>
 
                     <Button />
 
