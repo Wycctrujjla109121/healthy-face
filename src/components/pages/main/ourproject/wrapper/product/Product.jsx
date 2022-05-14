@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useDebugValue } from 'react';
 
 // STATE 
 import state from '../../../../state/state'
@@ -7,11 +7,8 @@ import style from './product.module.scss'
 
 const product = (props) => {
 
-    function addToCard({productName, priceNew, priceOld, img}){
-
-        console.log(props)
-
-        state.push({name:productName, priceNew:priceNew, priceOld:priceOld, img:img})
+    function addToCard({name, priceNew, priceOld, img}){
+        state.push({name:name, priceNew:priceNew, priceOld:priceOld, img:img})
     }
 
     return (

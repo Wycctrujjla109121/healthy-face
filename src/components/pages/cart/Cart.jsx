@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useDebugValue } from 'react';
 
 // STATE
 import state from '../state/state.js';
@@ -10,7 +10,6 @@ import Button from './button/Button.jsx';
 import style from './cart.module.scss'
 
 const Cart = () => {
-
     const result = state.map((state, info) => {
         return (
             <Item key={info} name={state.name} priceNew={state.priceNew} priceOld={state.priceOld} img={state.img}/>
