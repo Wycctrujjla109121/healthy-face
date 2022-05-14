@@ -3,24 +3,37 @@
     flex-direction: row;
     align-items: center;
 
-    &__star{
-        margin-right: 4px;
-    }
     &__text{
+        display: flex;
+        align-items: center;
         margin: 0px;
 
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
         font-size: 24px;
         color: #DA6836;
+
+        &::before{
+            content: '';
+            display: inline-block;
+
+            margin-right: 4px;
+
+            width: 50px;
+            height: 50px;
+
+            background-image: url(./logopng/logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1225px){
     .logo{
 
         &__text{
-            font-size: 20px;
+            font-size: 16px;
         }
     }
 }

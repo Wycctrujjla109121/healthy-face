@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-//  IMG
-import img from './svg/insctruction__pic.svg'
+
 //  STYLES
 import style from './item.module.scss'
 
 const Item = (props) => {
+
     return (
         <div className={style.item}>
             <div className={style.item__info}>
@@ -17,7 +17,8 @@ const Item = (props) => {
                 <p className={style.item__slogan}>{props.slogan}</p>
             </div>
 
-            <img className={style.item__img} src={img} alt="" />
+            <img className={style.item__img} src={props.img} alt=""/>
+
         </div>
     );
 };

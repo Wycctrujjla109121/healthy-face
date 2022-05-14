@@ -13,7 +13,7 @@ const Cart = () => {
 
     const result = state.map((state, info) => {
         return (
-            <Item key={info} name={state.name} priceNew={state.priceNew} priceOld={state.priceOld}/>
+            <Item key={info} name={state.name} priceNew={state.priceNew} priceOld={state.priceOld} img={state.img}/>
         )
     })
 
