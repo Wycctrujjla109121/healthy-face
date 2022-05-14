@@ -21,31 +21,31 @@ const Wrapper = () => {
             priceNew: '1499 р.',
             priceOld: '2199 р.',
             name: 'Phyther',
-            img: { img0 }
+            img: `${img0}`
         },
         {
             priceNew: '999 р.',
             priceOld: '1299 р.',
             name: 'Derma',
-            img: { img1 }
+            img: `${img1}`
         },
         {
             priceNew: '1199 р.',
             priceOld: '1599 р.',
             name: 'Eco-phyther',
-            img: { img2 }
+            img: `${img2}`
         },
         {
             priceNew: '1299 р.',
             priceOld: '1599 р.',
             name: 'Farma',
-            img: { img3 }
+            img: `${img3}`
         },
         {
             priceNew: '799 р.',
             priceOld: '1199 р.',
             name: 'Consular',
-            img: { img4 }
+            img: `${img4}`
         },
         {
             priceNew: '799 р.',
@@ -80,7 +80,6 @@ const Wrapper = () => {
     function handleLeftClick() {
         setOffset((currentOffset) => {
             const newOffset = currentOffset + maxWidthProduct
-            console.log(currentOffset)
 
             return Math.min(newOffset, 0)
         })
@@ -106,8 +105,6 @@ const Wrapper = () => {
 
 
             const maxOffset = -(maxWidthProduct * (product.length)) + maxWidthList
-            console.log('Текущий offset: ' + currentOffset)
-            console.log('Максимальная offset: ' + maxOffset)
 
             return Math.max(newOffset, maxOffset)
         })
