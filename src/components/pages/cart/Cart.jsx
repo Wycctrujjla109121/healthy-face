@@ -1,7 +1,5 @@
-import React, { useDebugValue } from 'react';
+import React from 'react';
 
-// STATE
-import state from '../state/state.js';
 //  COMPONENTS
 import Item from './item/Item.jsx'
 import Buy from './buy/Buy.jsx'
@@ -9,17 +7,25 @@ import Button from './button/Button.jsx';
 //  STYLE
 import style from './cart.module.scss'
 
-const Cart = () => {
-    const result = state.map((state, info) => {
+const Cart = ({states, useStates, defaultState}) => {
+
+
+    const result = states.map((states, info) => {
         return (
-            <Item key={info} name={state.name} priceNew={state.priceNew} priceOld={state.priceOld} img={state.img}/>
+            <Item 
+            key={info} 
+            name={states.name} 
+            priceNew={states.priceNew} 
+            priceOld={states.priceOld} 
+            img={states.img} 
+            states={states} useStates={useStates} defaultState={defaultState}/>
         )
     })
 
     return (
         <div className={style.cart}>
 
-                <Button />
+                <Button states={states}/>
 
             <div className={style.cart__info}>
                 <div className={style.cart__list}>

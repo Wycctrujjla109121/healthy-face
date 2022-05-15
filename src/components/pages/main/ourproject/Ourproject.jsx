@@ -6,12 +6,12 @@ import Showmore from './showMore/Showmore';
 //  STYLES
 import style from './ourproject.module.scss'
 
-const ourproject = () => {
+const ourproject = ({states, defaultState}) => {
     return (
         <div className={style.ourproject}>
             <h2 className={style.ourproject__title}>Наши продукты</h2>
 
-            <Wrapper />
+            <Wrapper states={states} defaultState={defaultState}/>
 
             <Showmore />
         </div>

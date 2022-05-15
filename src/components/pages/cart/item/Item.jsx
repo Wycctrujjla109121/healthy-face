@@ -1,7 +1,6 @@
 import React from 'react';
 
-// STATE
-import state from '../../state/state.js';
+
 //  COMPONENTS
 import Text from './text/Text.jsx'
 import Button from './button/button/Button';
@@ -9,21 +8,16 @@ import Button_500 from './button/button-500/Button_500';
 //  STYLES
 import style from './item.module.scss'
 
-const Item = ({ name, priceNew, priceOld, img }) => {
+const Item = ({states, useStates, name, priceNew, priceOld, img, defaultState}) => {
 
-
-
-    function clickRemove() {
-        let deleteCurrentState;
-        state.find((currentState, index) => {
-            if (currentState.name == name && currentState.priceNew == priceNew && currentState.priceOld == priceOld) {
-                deleteCurrentState = index
+    function ClickRemove(){
+        defaultState.filter((current, index) => {
+            if (current == states){
+                defaultState.splice(index, 1);
             }
         })
-        state.splice(deleteCurrentState, 1)
-
+        useStates(defaultState)
     }
-
 
     return (
         <div className={style.wrapper}>
@@ -40,7 +34,7 @@ const Item = ({ name, priceNew, priceOld, img }) => {
 
                     <Button />
 
-                    <button className={style.wrapper__delete} onClick={clickRemove}>Удалить</button>
+                    <button className={style.wrapper__delete} onClick={ClickRemove}>Удалить</button>
                 </div>
 
             </div>

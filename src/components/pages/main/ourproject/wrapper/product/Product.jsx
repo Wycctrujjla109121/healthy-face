@@ -1,30 +1,28 @@
-import React, { useDebugValue } from 'react';
+import React from 'react';
 
-// STATE 
-import state from '../../../../state/state'
 //  STYLES
 import style from './product.module.scss'
 
-const product = (props) => {
+const product = ({states, name, priceNew, priceOld, img, offset, defaultState}) => {
 
-    function addToCard({name, priceNew, priceOld, img}){
-        state.push({name:name, priceNew:priceNew, priceOld:priceOld, img:img})
+    function addToCard(){
+        defaultState.push({name:name, priceNew:priceNew, priceOld:priceOld, img:img})
     }
 
     return (
         <div className={style.product} style={
             {
-                backgroundImage: `url(${props.img})`,
-                transform: `translateX(${props.offset}px)`
+                backgroundImage: `url(${img})`,
+                transform: `translateX(${offset}px)`
             }}>
             <div className={style.product__info}>
                 <div className={style.product__price}>
-                    <h3 className={style.product__priceNew}>{props.priceNew}</h3>
-                    <h3 className={style.product__priceOld}>{props.priceOld}</h3>
+                    <h3 className={style.product__priceNew}>{priceNew}</h3>
+                    <h3 className={style.product__priceOld}>{priceOld}</h3>
                 </div>
-                <h3 className={style.product__text}>{props.name}</h3>
+                <h3 className={style.product__text}>{name}</h3>
             </div>
-            <button className={style.product__button} onClick={() => {addToCard(props)}}>Купить</button>
+            <button className={style.product__button} onClick={() => {addToCard()}}>Купить</button>
         </div>
     );
 };

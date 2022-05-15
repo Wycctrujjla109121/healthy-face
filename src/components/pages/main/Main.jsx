@@ -12,16 +12,17 @@ import Order from '../order/Order.jsx'
 //  STYLES
 import style from './main.module.scss'
 
-const main = () => {
+const Main = ({states, useStates, defaultState}) => {
+
     return (
         <div className={style.main}>
             <BrowserRouter>
                 <Menu />
 
                 <Routes>
-                    <Route path="*" element={<Content />} />
+                    <Route path="*" element={<Content states={states} defaultState={defaultState}/>} />
 
-                    <Route path="cart" element={<Cart />} />
+                    <Route path="cart" element={<Cart states={states} useStates={useStates} defaultState={defaultState}/>} />
 
                     <Route path="productCard" element={<ProductCard/>}/>
 
@@ -34,4 +35,4 @@ const main = () => {
     );
 };
 
-export default main;
+export default Main;

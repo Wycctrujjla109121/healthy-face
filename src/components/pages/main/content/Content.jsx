@@ -14,14 +14,14 @@ import Feedback from '../feedback/Feedback.jsx';
 //  STYLES
 import style from './content.module.scss'
 
-const Content = () => {
+const Content = ({states, defaultState}) => {
     return (
         <div className={style.content}>
             <Preview />
 
             <Showspray />
 
-            <Ourproject />
+            <Ourproject states={states} defaultState={defaultState}/>
 
             <Offer />
 
