@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // STATE
 import state from '../../state/state.js';
@@ -9,30 +9,34 @@ import Button_500 from './button/button-500/Button_500';
 //  STYLES
 import style from './item.module.scss'
 
-const Item = ({name, priceNew, priceOld, img}) => {
+const Item = ({ name, priceNew, priceOld, img }) => {
 
-    function clickRemove(){
+
+
+    function clickRemove() {
         let deleteCurrentState;
-        state.find((currentState, index) =>{
-            if (currentState.name == name && currentState.priceNew == priceNew && currentState.priceOld == priceOld){
+        state.find((currentState, index) => {
+            if (currentState.name == name && currentState.priceNew == priceNew && currentState.priceOld == priceOld) {
                 deleteCurrentState = index
             }
         })
         state.splice(deleteCurrentState, 1)
+
     }
+
 
     return (
         <div className={style.wrapper}>
             <div className={style.wrapper__item}>
                 <img className={style.wrapper__img} src={img} alt="Картинка"
-                style={
-                    {
-                        backgroundPosition:'center'
-                    }
-                }/>
+                    style={
+                        {
+                            backgroundPosition: 'center'
+                        }
+                    } />
 
                 <div className={style.wrapper__list}>
-                    <Text name={name} priceNew={priceNew} priceOld={priceOld}/>
+                    <Text name={name} priceNew={priceNew} priceOld={priceOld} />
 
                     <Button />
 
