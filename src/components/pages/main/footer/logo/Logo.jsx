@@ -9,7 +9,7 @@ const logo = () => {
     return (
         <div className={style.logo}>
             <img className={style.logo__img} src={logoImg} alt="" />
-            <h2 className={style.logo__title}>Healthy face</h2>
+            <h2 className={style.logo__title}>ZIN</h2>
         </div>
     );
 };
