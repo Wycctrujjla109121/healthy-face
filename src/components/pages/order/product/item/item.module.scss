@@ -18,9 +18,7 @@
         font-size: 16px;
         font-feature-settings: 'pnum', 'lnum';
 
-        color: #FFFFFF;
-
-
+        color: #000;
     }
 
     &__price {
@@ -32,13 +30,13 @@
         font-size: 14px;
         font-feature-settings: 'pnum', 'lnum';
 
-        color: #FFFFFF;
+        color: #000;
     }
 
     &__priceOld{
         font-weight: 400;
 
-        color: #FFFFFF80;
+        color: #000;
         text-decoration: line-through;
     }
 

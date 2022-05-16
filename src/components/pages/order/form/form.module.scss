@@ -15,7 +15,7 @@
         font-size: 18px;
         font-feature-settings: 'pnum', 'lnum';
 
-        color: #FFFFFF;
+        color: #000;
 
     }
 
@@ -25,18 +25,18 @@
         font-weight: 400;
         font-size: 16px;
 
-        color: #FFFFFF;
+        color: #000;
 
         background-color: transparent;
         border: none;
-        border-bottom: 1.2px solid #FFFFFF;
+        border-bottom: 1.2px solid #000;
 
         padding-bottom: 14px;
 
         // Модификатор
         &::placeholder {
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.6);
+            color: #000;
         }
 
         // Модификатор

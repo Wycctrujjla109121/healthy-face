@@ -8,9 +8,15 @@
         font-size: 20px;
         font-weight: 300;
 
-        color: #fff;
+        color: #000;
         text-decoration: none;
         text-align: center;
+
+        transition: 0.5s;
+
+        &:hover{
+            color: #d4bdb0;
+        }
     }
 
     &__phone{
@@ -18,9 +24,15 @@
         font-size: 18px;
         font-weight: 300;
 
-        color: #fff;
+        color: #000;
         text-decoration: none;
         text-align: center;
+
+        transition: 0.5s;
+
+        &:hover{
+            color: #d4bdb0;
+        }
     }
 }
 

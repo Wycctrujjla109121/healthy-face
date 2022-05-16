@@ -11,7 +11,7 @@ const Item = () => {
             <img className={style.item__img} src={img} alt="Картинка" />
             <div className={style.item__info}>
                 <h3 className={style.item__header}>Спрей Phyther</h3>
-                <p className={style.item__price}>Цена: 99$ <span className={style.item__priceOld}>120$</span></p>
+                <p className={style.item__price}>Цена: 1199 р <span className={style.item__priceOld}>1399 р</span></p>
             </div>
         </div>
     );

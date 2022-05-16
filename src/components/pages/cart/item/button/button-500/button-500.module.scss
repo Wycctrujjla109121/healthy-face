@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     column-gap: 22px;
-    border: 1.2px solid #fff;
+    border: 1.2px solid #000;
 
     max-width: 119px;
     min-width: 119px;
@@ -36,7 +36,7 @@
         line-height: 21px;
         font-feature-settings: 'pnum', 'lnum';
 
-        color: #FFFFFF;
+        color: #000;
     }
 
     &__add {

@@ -19,7 +19,7 @@
         line-height: 21px;
         font-feature-settings: 'pnum', 'lnum';
 
-        color: #FFFFFF;
+        color: #000;
     }
 
     &__text {
@@ -32,7 +32,7 @@
         line-height: 21px;
         font-feature-settings: 'pnum', 'lnum';
 
-        color: #FFFFFF;
+        color: #000;
 
     }
 
@@ -46,13 +46,14 @@
         line-height: 21px;
         font-feature-settings: 'pnum', 'lnum';
 
-        color: #FFFFFF;
-
+        color: #000;
     }
 
     &__priceOld {
         font-weight: 400;
-        color: #FFFFFF80;
+        color: #000;
+
+        text-decoration: line-through;
     }
 
     &__button {
@@ -65,7 +66,7 @@
         line-height: 19px;
         font-feature-settings: 'pnum', 'lnum';
 
-        color: #FFFFFF;
+        color: #000;
 
         border: 1.2px solid #DA6836;
         background-color: transparent;
