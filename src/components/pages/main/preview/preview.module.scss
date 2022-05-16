@@ -11,10 +11,10 @@
 
     margin: 0 auto;
 
-    background-image: url(./svg/mainScreenPhoto.svg);
+    background-image: url(./svg/preview.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: auto;
+    background-size: 1200px;
 }
 
 @media screen and (max-width: 1550px){
@@ -36,7 +36,7 @@
 }
 @media screen and (max-width: 793px){
     .list{
-        background-size: 300px;
+        background-size: 800px;
     }
 }
 @media screen and (max-width: 575px){
@@ -47,6 +47,6 @@
 
 @media screen and (max-width: 420px){
     .list{
-        background-size: 200px;
+        background-size: 400px;
     }
 }
