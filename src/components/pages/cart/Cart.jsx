@@ -9,7 +9,6 @@ import style from './cart.module.scss'
 
 const Cart = ({states, useStates, defaultState}) => {
 
-
     const result = states.map((states, info) => {
         return (
             <Item 
@@ -18,7 +17,8 @@ const Cart = ({states, useStates, defaultState}) => {
             priceNew={states.priceNew} 
             priceOld={states.priceOld} 
             img={states.img} 
-            states={states} useStates={useStates} defaultState={defaultState}/>
+            states={states} useStates={useStates}
+            defaultState={defaultState}/>
         )
     })
 
@@ -33,7 +33,7 @@ const Cart = ({states, useStates, defaultState}) => {
                 </div>
 
                 <div className={style.cart__buy}>
-                    <Buy />
+                    <Buy states={states}/>
                 </div>
             </div>
         </div>

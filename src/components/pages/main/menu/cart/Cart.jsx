@@ -1,15 +1,14 @@
 import React from 'react';
 
-//  IMG
-import cartImg from './svg/shoppingBag.svg'
+
 //  STYLES
 import style from './cart.module.scss'
 import { NavLink } from 'react-router-dom';
 
-const Cart = () => {
+const Cart = ({ states, defaultState }) => {
     return (
         <NavLink to='/cart' className={style.cart}>
-            <h2 className={style.cart__header}>(1)</h2>
+            <h2 className={style.cart__header}>({states.length})</h2>
         </NavLink>
     );
 };

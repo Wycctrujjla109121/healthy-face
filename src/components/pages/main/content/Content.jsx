@@ -15,14 +15,14 @@ import MasterClass from '../masterclass/Masterclass.jsx';
 //  STYLES
 import style from './content.module.scss'
 
-const Content = ({states, defaultState}) => {
+const Content = ({states, useStates, defaultState}) => {
     return (
         <div className={style.content}>
-            <Preview />
+            {/* <Preview /> */}
 
-            <Showspray />
+            {/* <Showspray /> */}
 
-            <Ourproject states={states} defaultState={defaultState}/>
+            <Ourproject states={states} useStates={useStates} defaultState={defaultState}/>
 
             <Offer />
 

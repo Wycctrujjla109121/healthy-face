@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //  Route
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -13,20 +13,19 @@ import Order from '../order/Order.jsx'
 import style from './main.module.scss'
 
 const Main = ({states, useStates, defaultState}) => {
-
     return (
         <div className={style.main}>
             <BrowserRouter>
-                <Menu />
+                <Menu states={states}/>
 
                 <Routes>
-                    <Route path="*" element={<Content states={states} defaultState={defaultState}/>} />
+                    <Route path="*" element={<Content states={states} useStates={useStates} defaultState={defaultState}/>} />
 
                     <Route path="cart" element={<Cart states={states} useStates={useStates} defaultState={defaultState}/>} />
 
                     <Route path="productCard" element={<ProductCard/>}/>
 
-                    <Route path="cart/order" element={<Order/>}/>
+                    <Route path="cart/order" element={<Order states={states}/>}/>
                 </Routes>
 
                 <Footer />

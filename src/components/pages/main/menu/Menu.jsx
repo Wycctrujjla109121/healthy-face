@@ -10,7 +10,7 @@ import Burger from './burger/Burger.jsx'
 //  STYLE
 import style from './menu.module.scss'
 
-const list = (props) => {
+const list = ({states, defaultState}) => {
     return (
         <div className={style.list}>
             <Logo />
@@ -18,7 +18,7 @@ const list = (props) => {
             <Link />
 
             <div className={style.list__cart}>
-                <Cart />
+                <Cart states={states} defaultState={defaultState}/>
 
                 <Phone />
             </div>

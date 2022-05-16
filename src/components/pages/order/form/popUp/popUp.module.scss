@@ -1,0 +1,100 @@
+.popUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6e5db;
+
+
+    position:fixed;
+    left: 0px;
+    top: -3000px;
+
+    width: 100%;
+    min-height: 100%;
+
+    transition: 1s;
+
+    &__visibility{
+        display: flex;
+
+        top: 0px;
+    }
+
+    &__hidden{
+        top: -3000px;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+        width: 80%;
+        height: 80%;
+    }
+
+    &__header{
+        margin: 0px;
+        font-size: 30px;
+    }
+
+    &__title{
+        margin: 0px;
+        margin-top: 30px;
+        
+        font-size: 20px;
+    }
+
+    &__list{
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        overflow-y: scroll;
+
+        max-height: 419px;
+    }
+
+    &__fullPrice{
+        font-size: 40px;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        padding: 15px 25px;
+        border: 1px solid orange;
+        background-color: transparent;
+    }
+}
+
+.item{
+
+    &__img{
+        width: 150px;
+        height: fit-content;
+    }
+
+    &__text{
+        margin: 0px;
+        font-size: 24px;
+    }
+
+    &__price{
+        font-size: 24px;
+    }
+}

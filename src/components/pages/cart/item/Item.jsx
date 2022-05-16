@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 //  COMPONENTS
@@ -8,15 +8,13 @@ import Button_500 from './button/button-500/Button_500';
 //  STYLES
 import style from './item.module.scss'
 
-const Item = ({states, useStates, name, priceNew, priceOld, img, defaultState}) => {
+const Item = ({ states, useStates, name, priceNew, priceOld, img, defaultState }) => {
 
-    function ClickRemove(){
-        defaultState.filter((current, index) => {
-            if (current == states){
-                defaultState.splice(index, 1);
-            }
+    function ClickRemove() {
+        const newDefaultState = defaultState.filter(el => {
+            return el.name != states.name
         })
-        useStates(defaultState)
+        useStates(newDefaultState)
     }
 
     return (

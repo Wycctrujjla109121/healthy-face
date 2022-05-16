@@ -3,10 +3,12 @@ import React from 'react';
 //  STYLES
 import style from './product.module.scss'
 
-const product = ({states, name, priceNew, priceOld, img, defaultState}) => {
+const product = ({states, name, priceNew, priceOld, img, useStates, defaultState}) => {
 
-    function addToCard(){
-        defaultState.push({name:name, priceNew:priceNew, priceOld:priceOld, img:img})
+    function AddToCard(){
+        states.push({name:name, priceNew:priceNew, priceOld:priceOld, img:img})
+
+        useStates([...states])
     }
 
     return (
@@ -21,7 +23,7 @@ const product = ({states, name, priceNew, priceOld, img, defaultState}) => {
                 </div>
                 <h3 className={style.product__text}>{name}</h3>
             </div>
-            <button className={style.product__button} onClick={() => {addToCard()}}>Купить</button>
+            <button className={style.product__button} onClick={() => {AddToCard()}}>Купить</button>
         </div>
     );
 };

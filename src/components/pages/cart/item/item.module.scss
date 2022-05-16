@@ -53,7 +53,7 @@
 
     &__img {
         width: 167px;
-        height: 220px;
+        height: fit-content;
     }
 
     &__block{
@@ -101,7 +101,6 @@
 
         &__img {
             width: 102px;
-            height: 134px;
         }
     }
 }

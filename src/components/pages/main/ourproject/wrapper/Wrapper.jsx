@@ -12,7 +12,7 @@ import Product from './product/Product.jsx'
 //  STYLES
 import style from './wrapper.module.scss'
 
-const Wrapper = ({states, defaultState}) => {
+const Wrapper = ({states, useStates, defaultState}) => {
 
     const [product, setProduct] = useState([
         {
@@ -35,8 +35,6 @@ const Wrapper = ({states, defaultState}) => {
         }
     ])
 
-    const [offset, setOffset] = useState(0)
-
     const resultProduct = Array.from(product.map((product, text) => {
         return <Product 
         priceNew={product.priceNew} 
@@ -44,7 +42,7 @@ const Wrapper = ({states, defaultState}) => {
         name={product.name} 
         img={product.img} 
         key={text} 
-        states={states} defaultState={defaultState}/>
+        states={states} useStates={useStates} defaultState={defaultState}/>
     }))
 
     return (

@@ -7,9 +7,8 @@ import Main from './components/pages/main/Main.jsx'
 
 function App() {
 
-  const defaultState = []
-  const [states, useStates] = useState(defaultState)
-
+  const [states, useStates] = useState([])
+  const defaultState = states
   return (
     <div className="App">
       <Main states={states} useStates={useStates} defaultState={defaultState}/>

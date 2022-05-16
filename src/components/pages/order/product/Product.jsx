@@ -8,15 +8,21 @@ import Item from './item/Item';
 //  STYLES
 import style from './product.module.scss'
 
-const Product = () => {
+const Product = ({ states }) => {
+
+    const item = states.map((current, index) =>
+        <Item
+            name={current.name}
+            priceNew={current.priceNew}
+            priceOld={current.priceOld}
+            img={current.img} 
+            key={index}/>)
+
     return (
         <div className={style.product}>
             <h3 className={style.product__title}>Товары:</h3>
             <div className={style.product__list}>
-                <Item img={img1}/>
-                <Item img={img2}/>
-                <Item img={img3}/>
-                <Item img={img1}/>
+                {item}
             </div>
         </div>
     );
