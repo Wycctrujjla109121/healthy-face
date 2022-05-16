@@ -1,7 +1,9 @@
 import React from 'react';
 
-//  img
-import img from './svg/ourProducts__img.svg'
+//  IMG 
+import img1 from './img/product_1.png'
+import img2 from './img/product_2.png'
+import img3 from './img/product_3.png'
 // COMPONENTS 
 import Item from './item/Item.jsx'
 //  STYLES
@@ -12,16 +14,9 @@ const order = () => {
         <div className={style.order}>
             <h1 className={style.order__header}>хотите заказать?</h1>
             <div className={style.order__list}>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
-                <Item img={img} text='Phyther' priceOld='129$' priceNew='99$'/>
+                <Item img={img1} text='Phyther' priceNew='1199 р' priceOld='1399 р'/>
+                <Item img={img2} text='Phyther' priceNew='1199 р' priceOld='1399 р'/>
+                <Item img={img3} text='Phyther' priceNew='1199 р' priceOld='1399 р'/>
             </div>
         </div>
     );

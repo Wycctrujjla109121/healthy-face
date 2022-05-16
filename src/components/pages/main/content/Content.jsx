@@ -11,6 +11,7 @@ import Contacts from '../contacts/Contacts.jsx';
 import Questions from '../questions/Questions.jsx';
 import Order from '../order/Order.jsx'
 import Feedback from '../feedback/Feedback.jsx';
+import MasterClass from '../masterclass/Masterclass.jsx';
 //  STYLES
 import style from './content.module.scss'
 
@@ -34,6 +35,8 @@ const Content = ({states, defaultState}) => {
             <Questions />
 
             <Order />
+
+            <MasterClass />
 
             <Feedback />
         </div>

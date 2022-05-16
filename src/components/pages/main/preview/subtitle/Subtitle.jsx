@@ -9,7 +9,7 @@ const subtitle = () => {
     return (
         <div className={style.subtitle}>
             <Description />
-            <h2 className={style.subtitle__slogan}>with<span className={style.subtitle__span}> Healthy face</span></h2>
+            <h2 className={style.subtitle__slogan}>в<span className={style.subtitle__span}> твоих руках</span></h2>
         </div>
     );
 };

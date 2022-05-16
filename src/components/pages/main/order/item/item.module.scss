@@ -8,7 +8,8 @@
     cursor: pointer;
 
     &__img {
-        width: 100%;
+        width: inherit;
+        height: initial;
     }
 
     &__info {
@@ -156,7 +157,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
     .item {
 
 
@@ -166,17 +167,19 @@
 
 
         &__priceOld {
-            font-size: 14px;
+            font-size: 12px;
         }
 
         &__priceNew {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 330px) {
     .item {
-        max-width: 132px;
+        &__text {
+            font-size: 12px;
+        }
     }
 }

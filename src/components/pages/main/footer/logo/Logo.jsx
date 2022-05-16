@@ -1,7 +1,7 @@
 import React from 'react';
 
 //  IMG LOGO
-import logoImg from './svg/logo.svg'
+import logoImg from './svg/logo.png'
 //  STYLES
 import style from './logo.module.scss';
 

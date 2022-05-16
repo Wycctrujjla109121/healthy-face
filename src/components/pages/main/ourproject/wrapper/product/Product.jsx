@@ -3,7 +3,7 @@ import React from 'react';
 //  STYLES
 import style from './product.module.scss'
 
-const product = ({states, name, priceNew, priceOld, img, offset, defaultState}) => {
+const product = ({states, name, priceNew, priceOld, img, defaultState}) => {
 
     function addToCard(){
         defaultState.push({name:name, priceNew:priceNew, priceOld:priceOld, img:img})
@@ -13,7 +13,6 @@ const product = ({states, name, priceNew, priceOld, img, offset, defaultState}) 
         <div className={style.product} style={
             {
                 backgroundImage: `url(${img})`,
-                transform: `translateX(${offset}px)`
             }}>
             <div className={style.product__info}>
                 <div className={style.product__price}>

@@ -6,7 +6,7 @@ import style from './title.module.scss'
 const title = () => {
     return (
         <div className={style.title}>
-            <h2 className={style.title__text}>Make your face healty</h2>
+            <h2 className={style.title__text}>Твоя красота</h2>
         </div>
     );
 };
