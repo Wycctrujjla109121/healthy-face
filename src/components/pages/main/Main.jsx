@@ -16,14 +16,14 @@ const Main = ({states, useStates, defaultState}) => {
     return (
         <div className={style.main}>
             <BrowserRouter>
-                <Menu states={states}/>
+                <Menu states={states} />
 
                 <Routes>
                     <Route path="*" element={<Content states={states} useStates={useStates} defaultState={defaultState}/>} />
 
                     <Route path="cart" element={<Cart states={states} useStates={useStates} defaultState={defaultState}/>} />
 
-                    <Route path="productCard" element={<ProductCard/>}/>
+                    <Route path="productCard" element={<ProductCard/>} />
 
                     <Route path="cart/order" element={<Order states={states}/>}/>
                 </Routes>

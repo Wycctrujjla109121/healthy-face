@@ -4,6 +4,12 @@ import React from 'react';
 import style from './item.module.scss'
 
 const item = (props) => {
+    function AddToCard(){
+        props.states.push({name:props.name, priceNew:props.priceNew, priceOld:props.priceOld, img:props.img})
+
+        props.useStates([...props.states])
+    }
+
     return (
         <div className={style.item}>
             <img className={style.item__img} src={props.img} alt="" />
@@ -14,7 +20,7 @@ const item = (props) => {
                     <p className={style.item__priceNew}>{props.priceNew}</p>
                 </div>
             </div>
-            <button className={style.item__btn}>Купить</button>
+            <button className={style.item__btn} onClick={() => AddToCard()}>Купить</button>
         </div>
     );
 };

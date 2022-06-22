@@ -34,7 +34,7 @@ const Content = ({states, useStates, defaultState}) => {
 
             <Questions />
 
-            <Order />
+            <Order states={states} useStates={useStates} defaultState={defaultState}/>
 
             <MasterClass />
 
