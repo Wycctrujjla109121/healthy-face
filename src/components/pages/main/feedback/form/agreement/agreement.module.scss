@@ -1,74 +1,75 @@
 .agreement {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  &__checkbox + label {
+    display: inline-flex;
     align-items: center;
+    user-select: none;
+  }
+  &__checkbox + label::before {
+    margin-right: 20px;
 
-    &__checkbox {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-    }
-    &__checkbox+label {
-        display: inline-flex;
-        align-items: center;
-        user-select: none;
-    }
-    &__checkbox+label::before {
-        margin-right: 20px;
+    content: '';
+    display: inline-block;
 
-        content: '';
-        display: inline-block;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
 
-        width: 32px;
-        min-width: 32px;
-        height: 32px;
+    border: 1.2px solid #da6836;
+  }
+  &__checkbox:checked + label::before {
+    background-image: url(./svg/feedback__check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-        border: 1.2px solid #DA6836;
-    }
-    &__checkbox:checked + label::before{
-        background-image: url(./svg/feedback__check.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+  &__download {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 
-    &__text{
-        font-family: 'Raleway', sans-serif;
-        font-size: 20px;
+    color: #000;
 
-        color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-        cursor: pointer;
-    }
+  &__link {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
 }
 
-@media screen and (max-width: 1024px){
-    .agreement{
-
-        &__text{
-            font-size: 18px;
-
-        }
+@media screen and (max-width: 1024px) {
+  .agreement {
+    &__text {
+      font-size: 18px;
     }
+  }
 }
-@media screen and (max-width: 380px){
-    .agreement{
-
-        &__text{
-            font-size: 16px;
-        }
-
+@media screen and (max-width: 380px) {
+  .agreement {
+    &__text {
+      font-size: 16px;
     }
+  }
 }
-@media screen and (max-width: 340px){
-    .agreement{
-
-    &__checkbox+label::before {
-        width: 28px;
-        min-width: 28px;
-        height: 28px;
+@media screen and (max-width: 340px) {
+  .agreement {
+    &__checkbox + label::before {
+      width: 28px;
+      min-width: 28px;
+      height: 28px;
     }
-        &__text{
-            font-size: 14px;
-        }
+    &__text {
+      font-size: 14px;
     }
+  }
 }

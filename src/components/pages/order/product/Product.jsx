@@ -1,31 +1,37 @@
-import React from 'react';
+import React from 'react'
 
-import img1 from './item/svg/product_1.png'
-import img2 from './item/svg/product_2.png'
-import img3 from './item/svg/product_3.png'
 //  COMPONENTS
-import Item from './item/Item';
+import Item from './item/Item'
 //  STYLES
 import style from './product.module.scss'
 
-const Product = ({ states }) => {
-
-    const item = states.map((current, index) =>
-        <Item
-            name={current.name}
-            priceNew={current.priceNew}
-            priceOld={current.priceOld}
-            img={current.img} 
-            key={index}/>)
-
+const Product = ({ states, useStates }) => {
+  const result = states.map((state, id) => {
+    if (state.count === 0) {
+      return
+    }
     return (
-        <div className={style.product}>
-            <h3 className={style.product__title}>Товары:</h3>
-            <div className={style.product__list}>
-                {item}
-            </div>
-        </div>
-    );
-};
+      <Item
+        key={id}
+        name={state.name}
+        priceNew={state.priceNew}
+        priceOld={state.priceOld}
+        img={state.img}
+        states={state}
+        statesMain={states}
+        useStates={useStates}
+        count={state.count}
+        id={id}
+      />
+    )
+  })
 
-export default Product;
+  return (
+    <div className={style.product}>
+      <h3 className={style.product__title}>Товары:</h3>
+      <div className={style.product__list}>{result}</div>
+    </div>
+  )
+}
+
+export default Product

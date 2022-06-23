@@ -1,134 +1,149 @@
 .offer {
-    display: flex;
-    flex-direction: row;
-    column-gap: 62px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  column-gap: 62px;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1420px;
+
+  margin: 0 auto;
+  margin-top: 180px;
+
+  &__text {
+    margin: 0px;
 
     width: 100%;
-    max-width: 1420px;
+    max-width: 869px;
 
-    margin: 0 auto;
-    margin-top: 180px;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 400;
 
-    &__text {
-        margin: 0px;
+    color: #000;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    width: 250px;
+    height: 60px;
 
-        width: 100%;
-        max-width: 869px;
+    border-radius: 10px;
+    cursor: pointer;
 
-        font-family: 'Playfair Display', serif;
-        font-size: 64px;
-        font-weight: 400;
+    background-color: #ffab4b;
+    color: black;
 
-        color: #000;
-    }
-
-    &__img {
-        // Возможно будет дополнено
-    }
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+  }
+  &__img {
+    // Возможно будет дополнено
+  }
 }
 
 @media screen and (max-width: 1550px) {
-    .offer {
-        max-width: 1180px;
+  .offer {
+    max-width: 1180px;
 
-        column-gap: 111px;
+    column-gap: 111px;
 
-
-        &__text {
-            font-size: 52px;
-        }
+    &__text {
+      font-size: 52px;
     }
+  }
 }
 
-@media screen and (max-width: 1225px){
-    .offer{
-        padding: 0px 48px;
-        column-gap: 56px;
-    }
+@media screen and (max-width: 1225px) {
+  .offer {
+    padding: 0px 48px;
+    column-gap: 56px;
+  }
 }
 
 @media screen and (max-width: 1110px) {
-    .offer {
-        max-width: 928px;
+  .offer {
+    max-width: 928px;
 
-        &__text {
-            font-size: 40px;
-        }
-
-        &__img {
-            width: 296px;
-            height: 334px;
-        }
+    &__text {
+      font-size: 40px;
     }
+
+    &__img {
+      width: 296px;
+      height: 334px;
+    }
+  }
 }
 
-@media screen and (max-width: 1024px){
-    .offer{
-        margin-top: 157px;
-    }
+@media screen and (max-width: 1024px) {
+  .offer {
+    margin-top: 157px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .offer {
-        max-width: 720px;
+  .offer {
+    max-width: 720px;
 
-        column-gap: 14px;
+    column-gap: 14px;
 
-        padding: 0px 24px;
+    padding: 0px 24px;
 
-        margin-top: 137px;
+    margin-top: 137px;
 
-        &__text {
-            font-size: 32px;
-        }
-
-        &__img {
-            width: 296px;
-            height: 445px;
-        }
+    &__text {
+      font-size: 32px;
     }
+
+    &__img {
+      width: 296px;
+      height: 445px;
+    }
+  }
 }
 
 @media screen and (max-width: 615px) {
-    .offer {
-        flex-direction: column;
-        row-gap: 50px;
+  .offer {
+    flex-direction: column;
+    row-gap: 50px;
 
-        padding: 0px 16px;
+    padding: 0px 16px;
 
-        &__img {
-            align-self: flex-end;
-        }
+    &__img {
+      align-self: flex-end;
     }
+  }
 }
-
 
 @media screen and (max-width: 420px) {
-    .offer {
-        margin-top: 120px;
+  .offer {
+    margin-top: 120px;
 
-        &__text{
-            font-size: 27px;
-        }
+    &__text {
+      font-size: 27px;
     }
+  }
 }
 @media screen and (max-width: 392px) {
-    .offer {
-        row-gap: 70px;
+  .offer {
+    row-gap: 70px;
 
-        &__text {
-            font-size: 24px;
-        }
+    &__text {
+      font-size: 24px;
     }
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .offer {
-        row-gap: 82px;
+  .offer {
+    row-gap: 82px;
 
-        &__text {
-            font-size: 21px;
-        }
+    &__text {
+      font-size: 21px;
     }
+  }
 }

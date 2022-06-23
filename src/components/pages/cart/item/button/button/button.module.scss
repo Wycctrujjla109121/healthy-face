@@ -1,82 +1,83 @@
 .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 22px;
+  border: 1.2px solid #000;
+
+  max-width: 119px;
+  min-width: 119px;
+  height: 40px;
+
+  &__remove {
+    cursor: pointer;
+    height: 15px;
+
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      .button__remove__svg {
+        stroke: #da6836;
+      }
+    }
+  }
+
+  &__svg {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 22px;
-    border: 1.2px solid #000;
+  }
 
-    max-width: 119px;
-    min-width: 119px;
-    height: 40px;
+  &__number {
+    margin: 0px;
 
-    &__remove {
-        height: 15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum', 'lnum';
 
-        background-color: transparent;
-        border: none;
+    color: #000;
+  }
 
-        &:hover {
-            .button__remove__svg {
-                stroke: #DA6836;
-            }
-        }
+  &__add {
+    cursor: pointer;
+    height: 15px;
+
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      .button__add__svg {
+        stroke: #da6836;
+      }
     }
-
-    &__svg {
-        display: flex;
-    }
-
-    &__number {
-        margin: 0px;
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        font-feature-settings: 'pnum', 'lnum';
-
-        color: #000;
-    }
-
-    &__add {
-        height: 15px;
-
-        background-color: transparent;
-        border: none;
-
-        &:hover {
-            .button__add__svg {
-                stroke: #DA6836;
-            }
-        }
-    }
+  }
 }
 
 .button__remove__svg {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .button__add__svg {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
-
 @media screen and (max-width: 1550px) {
-    .button {
-        order: 1;
-    }
+  .button {
+    order: 1;
+  }
 }
 
 @media screen and (max-width: 948px) {
-    .button {
-        order: unset;
-    }
+  .button {
+    order: unset;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .button {
-        display: none;
-    }
+  .button {
+    display: none;
+  }
 }

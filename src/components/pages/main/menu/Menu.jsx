@@ -1,31 +1,31 @@
-import React from 'react';
+import React from 'react'
 
-//  COMPONENTS 
+//  COMPONENTS
 import Logo from './logo/Logo.jsx'
 import Link from './link/Link.jsx'
-import Cart from './cart/Cart.jsx';
+import Cart from './cart/Cart.jsx'
 import Phone from './phone/Phone.jsx'
 import Burger from './burger/Burger.jsx'
 
 //  STYLE
 import style from './menu.module.scss'
 
-const list = ({states, defaultState}) => {
-    return (
-        <div className={style.list}>
-            <Logo />
+const list = ({ states }) => {
+  return (
+    <div className={style.list}>
+      <Logo />
 
-            <Link />
+      <Link />
 
-            <div className={style.list__cart}>
-                <Cart states={states} defaultState={defaultState}/>
+      <div className={style.list__cart}>
+        <Cart states={states} />
 
-                <Phone />
-            </div>
+        <Phone />
+      </div>
 
-            <Burger />
-        </div>
-    );
-};
+      <Burger />
+    </div>
+  )
+}
 
-export default list;
+export default list
